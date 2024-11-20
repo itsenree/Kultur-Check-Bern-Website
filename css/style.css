@@ -1,5 +1,11 @@
+body {
+    background-color: #fdf0d5c8;
+}
 
-
+header{
+    display:flex;
+    align-items: center;
+}
 
 /* footer {
     background-color: #777;
