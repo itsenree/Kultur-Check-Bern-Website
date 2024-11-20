@@ -1,5 +1,11 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
 body {
-    background-color: #fdf0d5c8;
+    background-color: hsla(40, 91%, 91%, 0.784);
 }
 
 header{
@@ -7,27 +13,73 @@ header{
     align-items: center;
 }
 
+:root{
+  --darkred: rgb(156, 40, 39);
+  --lightbeige: rgb(253,240,213);
+  --backgroundbeige: hsla(40, 91%, 91%, 0.784)
+  
+}
+
 .logo {
     height: 70px;
 }
 
+.navbar{
+  display:flex;
+  flex-wrap: wrap;
+  /* -> linien vermehren sich untereinander */
+  /* align-self: start; */
+  justify-content: space-around;
+  margin:0;
+  padding:5px;
+  background-color: rgba(194, 193, 193, 0.354);
+  border-radius: 5px;
+  list-style: none;
+}
 
-/* .menu{
-  list-style: 
-} */
+/* Navbar Design */
 
+.navbar li a{
+    font-family: Monospace, Arial, Helvetica, sans-serif;
+    color: black;
+    /* folgendes -> macht damit die abstände gleichmässig auch bei veränderungen der Seite */
+    box-sizing: border-box;
+    height:40px;
+    padding: 10px 15px 0px 15px;
+}
 
+.active_btn{
+    color: var(--darkred) !important;
+}
 
+.navbar li a:hover, .active_btn{
+    color: var(--darkred);
+    border-bottom-style:solid;
+    border-bottom-color:var(--darkred);
+}
 
+/* Footer Design */
 
-/* .logo {
-    width: 45px;
-    height: 45px;
-} */
+.footer_content{
+    background-color: rgba(155, 41, 39, 0.5);
+    padding:10px;
+}
 
-/* footer {
-    background-color: #777;
-    padding: 10px;
+.logo_footer{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+}
+
+.footer_line{
+    list-style:none;
+    display:flex;
+    justify-content: space-around;
+}
+
+.rights{
+    display:block;
     text-align: center;
-    color: white;
-  } */
+    bo
+}
