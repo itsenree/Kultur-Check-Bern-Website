@@ -1,67 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-    <link rel="stylesheet" href="css/stylesheet.css" />
-    <title>This Site exists</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kultur Check Bärn</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-
-<div class="txt_div">
-    <h1 id="first_txt" class="txt_test" > <span class="welcome_txt ">Welcome</span> or whatever</h1>
-    <p class="txt_test" >Yes.<br>Welcome.</p>
-    <p class="txt_test" >That was all.<br>Goodbye.</p>
-</div>
-
-<!-- style="" -->
-
-<div>
-    <a href="https://www.youtube.com/watch?v=n61ULEU7CO0">
-    <p class="txt_test" >Click on me</p>
-    </a>
-</div>
-
-<div>
-    <p class="txt_test">Random Image</p>
-    <img class="img" src="img/moon_img.webp"/>
-</div>
-<div>
-    <img class="img" alt="picture_of_the_moon" target="_blank" src="https://miro.medium.com/v2/resize:fit:5000/1*3n97lsnyFnH2h6Av2L4zVA.jpeg" />
-</div>
-
-<div>
-    <h2> Nichtsortierte Liste</h2>
-    <ul>
-        <li>What</li>
-        <li>What</li>
-        <li>What</li>
-    </ul>
-    <h2> Sortierte Liste</h2>
-    <ol>
-        <li>Okay</li>
-        <li>Okay</li>
-        <li>Okay</li>
-    </ol>
-</div>
-
-</body>
-<footer>
-
-</footer>
-</html>
-
-<!-- 
-
-    <section><section/>
-    <article><article/>
-    <aside><aside/>
-    <header><header/>
-    <footer><footer/>
-    
+    <header>
+        
+        <a href="index.html">
+            <img class="logo" src="img/kcb_logo.png" alt="logo"/>
+            <img class="Profil-Icon"/>
+        </a>
+    </header>
     <nav>
-        <a href="/.../">First</a>
-        <a href="/.../">Second</a>
-        ...
+        <ul class="navbar">
+            <li><a class="active_btn" href="#">Home</a></li>
+            <!-- dropdown im navbar -->
+            <div class="dropdown">
+                <button class="dropbtn">Events 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Konzerte</a>
+                  <a href="#">Parties</a>
+                  <a href="#">Museen</a>
+                </div>
+              </div> 
+            <!-- <li><a href="#">Events</a></li> -->
+            <li><a href="#">Kalender</a></li>
+            <li><a href="#">Über uns</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Profilbild-Icon</a></li>
+            <!-- <li><a href="#">Konzerte</a></li>
+            <li><a href="#">Museen</a></li>
+            <li><a href="#">Theater</a></li>
+            <li><a href="#">Markt</a></li>
+            <li><a href="#">Nachtleben</a></li>
+            <li><a href="#">Kulinarik</a></li>
+            <li><a href="#">Feste</a></li> -->
+        </ul>
     </nav>
+    <main>
 
--->
+    </main>
+    <footer>
+        <div class="footer_content">
+            <img class="logo_footer" src="img/kcb_logo.png" alt="logo"/>
+            <ul class="footer_line">
+                <li><a href="#">Nutzungsbedingungen von Kultur Check Bärn</a></li>
+                <li><a href="#">Datenschutzerklärungen</a></li>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Cookie-Richtlinien</a></li>
+            </ul>
+            <p class="rights"> © 2024 Kultur Check Bärn. Alle Rechte vorbehalten.</p>
+        </div>
+                
+    </footer>
+</body> 
+</html>
