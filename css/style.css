@@ -109,8 +109,8 @@ header{
 
 /* Footer Design */
 
-footer {
-   position: fixed;
+footer{
+   position: relative;
    bottom:0;
    width: 100%;
    background-color: rgba(155, 41, 39, 0.5);
@@ -143,4 +143,107 @@ footer {
     display:block;
     text-align: center;
     font-size: 13px;
+}
+
+/* Konzert Page */
+
+/* Dropdown Filter Relevanz */
+/* Grundstil */
+.filter {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  position: relative;
+  margin-top:10px;
+}
+
+.filter_dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.filter_dropdown_main {
+  background-color: rgba(194, 193, 193, 0.354); /* Hauptbutton-Farbe */
+  color: black;
+  padding: 10px 20px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.4);
+  border:none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Dropdown-Inhalte */
+.dropdown_content_filter {
+  display: none; /* Standardmäßig ausgeblendet */
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown_content_filter li {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.dropdown_content_filter li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+/* Dropdown bei Hover anzeigen */
+.filter_dropdown:hover .dropdown_content_filter {
+  display: block;
+}
+
+/* Grid */
+
+.grid_container_concert {
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);/* 4 gleich große Spalten */
+  grid-template-rows:repeat(3, 300px 50px 40px);
+  box-sizing: border-box;
+  text-align: center;
+  padding:10px;
+  gap:5px;
+}
+
+.grid-item-concert{
+background-color: blue;
+height:100%;/* Boxen bleiben gleich groß */
+box-sizing:border-box;
+}
+
+.grid-text-item-concert{
+  background-color:rgba(194, 193, 193, 0.354);
+  font-weight: bold;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  font-size:20px;
+  font-family: Monospace, Arial, Helvetica, sans-serif;
+}
+ 
+.concert-img1{
+  display:block;
+  width: 100%; /* Passt die Breite des Bildes an die Breite der Kachel an */
+  height: 100%; /* Passt die Höhe des Bildes an die Höhe der Kachel an */
+  object-fit: cover; /* Schneidet das Bild so zu, dass es die Kachel vollständig ausfüllt */
+}
+
+.concert-img1:hover{
+  box-shadow: 0 0 10px 10px rgba(155, 41, 39, 0.5);
+}
+.topic_concert{
+  font-family: Monospace, Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  margin-left:10px;
+  margin-top: 55px;
+  margin-bottom: 0px;
+  text-align: center;
 }
