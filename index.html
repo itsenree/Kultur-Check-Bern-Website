@@ -10,18 +10,55 @@
 
 <body>
     <header>
+        
         <a href="index.html">
-            <img src="img/kcb_logo.png">
+            <img class="logo" src="img/kcb_logo.png" alt="logo"/>
+            <img class="Profil-Icon"/>
         </a>
     </header>
     <nav>
-
+        <ul class="navbar">
+            <li><a class="active_btn" href="#">Home</a></li>
+            <!-- dropdown im navbar -->
+            <div class="dropdown">
+                <button class="dropbtn">Events 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Konzerte</a>
+                  <a href="#">Parties</a>
+                  <a href="#">Museen</a>
+                </div>
+              </div> 
+            <!-- <li><a href="#">Events</a></li> -->
+            <li><a href="#">Kalender</a></li>
+            <li><a href="#">Über uns</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Profilbild-Icon</a></li>
+            <!-- <li><a href="#">Konzerte</a></li>
+            <li><a href="#">Museen</a></li>
+            <li><a href="#">Theater</a></li>
+            <li><a href="#">Markt</a></li>
+            <li><a href="#">Nachtleben</a></li>
+            <li><a href="#">Kulinarik</a></li>
+            <li><a href="#">Feste</a></li> -->
+        </ul>
     </nav>
     <main>
 
     </main>
     <footer>
-
+        <div class="footer_content">
+            <img class="logo_footer" src="img/kcb_logo.png" alt="logo"/>
+            <ul class="footer_line">
+                <li><a href="#">Nutzungsbedingungen von Kultur Check Bärn</a></li>
+                <li><a href="#">Datenschutzerklärungen</a></li>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Cookie-Richtlinien</a></li>
+            </ul>
+            <p class="rights"> © 2024 Kultur Check Bärn. Alle Rechte vorbehalten.</p>
+        </div>
+                
     </footer>
 </body> 
 </html>
