@@ -144,3 +144,53 @@ footer {
     text-align: center;
     font-size: 13px;
 }
+
+/* Startpage */
+
+/* Hintergrundfarbe */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgba(155, 41, 39, 0.5); /* Rosa Hintergrund */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center; /* Zentriert Text und den Button */
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 80px;
+}
+
+h1 {
+  color: white;
+  font-size: 35px;
+  margin-bottom: 20px; /* Abstand zwischen Text und Button */
+}
+
+.infoBox {
+  text-align: center;
+}
+
+.cta-button {
+  background-color: #8C4F4F; /* Knopfhintergrundfarbe */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #723838; /* Hover-Effekt */
+}
