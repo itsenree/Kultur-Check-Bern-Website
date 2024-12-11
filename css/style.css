@@ -192,12 +192,12 @@ footer {
 .homepage_grid_event_title {
     font-size: 30px;
     text-align: center;
+    height: 15px;
 }
 
 .homepage_event_content {
     background-color: rgba(209, 39, 39, 0.354);
     border-radius: 10px;
-    font-size: 30px;
     margin-top: 30px;
     padding: 10px;
     display: grid;
@@ -216,7 +216,7 @@ footer {
 .homepage_grid_item:nth-child(1) {
     grid-column: span 7; /* Span the first item across all 6 columns */
     width: 100%;
-    height: 50px;
+    height: 40px;
     display: flex; /* Use flexbox for centering */
     justify-content: center; /* Center horizontally */
 }
@@ -239,6 +239,21 @@ footer {
 /* .homepage_grid_item:nth-child(7) {
   display: hidden;
 } */
+
+.map_area {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color:#E7E1D3;
+  margin: 20px 60px;
+}
+
+iframe {
+  align-content: center;
+  width: 800px;
+  height: 500px;
+  border: 0;
+}
 
 /* Startpage */
 
