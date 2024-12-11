@@ -1,36 +1,36 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    color: black;
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: black;
 }
 
 body {
-    background-color: hsla(40, 91%, 91%, 0.784);
+  background-color: hsla(40, 91%, 91%, 0.784);
 }
 
-header{
-    display:flex;
-    align-items: center;
+header {
+  display: flex;
+  align-items: center;
 }
 
-:root{
+:root {
   --darkred: rgb(156, 40, 39);
 }
 
 .logo {
-    height: 70px;
+  height: 70px;
 }
 
-.Profil-Icon{
+.Profil-Icon {
   position: absolute;
   top: 20px;
   right: 20px;
   height: 40px;
-  
+
 }
 
-.navbar{
-  display:flex;
+.navbar {
+  display: flex;
   flex-wrap: wrap;
   /* -> linien vermehren sich untereinander */
   /* align-self: start; */
@@ -44,98 +44,98 @@ header{
 
 /* Navbar Design */
 
-.navbar li a{
-    font-family: Monospace, Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: black;
-    /* folgendes -> macht damit die abstände gleichmässig auch bei veränderungen der Seite */
-    box-sizing: border-box;
-    padding: 10px 15px 0px 15px;
+.navbar li a {
+  font-family: Monospace, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: black;
+  /* folgendes -> macht damit die abstände gleichmässig auch bei veränderungen der Seite */
+  box-sizing: border-box;
+  padding: 10px 15px 0px 15px;
 }
 
-.active_btn{
-    color: var(--darkred) !important;
+.active_btn {
+  color: var(--darkred) !important;
 }
 
-.navbar div:hover .dropbtn, 
+.navbar div:hover .dropbtn,
 .navbar div:focus-within .dropbtn {
-    color: var(--darkred);
-    border-bottom-style:solid;
-    border-bottom-color:var(--darkred);
+  color: var(--darkred);
+  border-bottom-style: solid;
+  border-bottom-color: var(--darkred);
 }
 
-.navbar li a:hover{
-    color: var(--darkred);
-    border-bottom-style:solid;
-    border-bottom-color:var(--darkred);
+.navbar li a:hover {
+  color: var(--darkred);
+  border-bottom-style: solid;
+  border-bottom-color: var(--darkred);
 }
 
 /* Navbar Dropdown */
 
 .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    font-family: Monospace, Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: black;
-    /* folgendes -> macht damit die abstände gleichmässig auch bei veränderungen der Seite */
-    box-sizing: border-box;
-    padding: 0px 15px 0px 15px;
-    border: none;
-    outline: none;
-    background-color: inherit;
-  }
+  float: left;
+  overflow: hidden;
+}
 
-  .dropdown .active_btn {
-    font-family: Monospace, Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: var(--darkred);
-    border-bottom-style:solid;
-    border-bottom-color:var(--darkred);
-    /* folgendes -> macht damit die abstände gleichmässig auch bei veränderungen der Seite */
-    box-sizing: border-box;
-    padding: 0px 15px 0px 15px;
-    border: none;
-    outline: none;
-    background-color: inherit;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #E7E1D3;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius: 5px;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
+.dropdown .dropbtn {
+  font-family: Monospace, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: black;
+  /* folgendes -> macht damit die abstände gleichmässig auch bei veränderungen der Seite */
+  box-sizing: border-box;
+  padding: 0px 15px 0px 15px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
 
-  .dropdown-content .active_dropdown {
-    color: var(--darkred);
-  }
-  
-  .dropdown-content a:hover {
-    color: var(--darkred);
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+.dropdown .active_btn {
+  font-family: Monospace, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: var(--darkred);
+  border-bottom-style: solid;
+  border-bottom-color: var(--darkred);
+  /* folgendes -> macht damit die abstände gleichmässig auch bei veränderungen der Seite */
+  box-sizing: border-box;
+  padding: 0px 15px 0px 15px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #E7E1D3;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content .active_dropdown {
+  color: var(--darkred);
+}
+
+.dropdown-content a:hover {
+  color: var(--darkred);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 
-/* Footer Design */ 
+/* Footer Design */
 
 footer {
     /* position: relative; */
@@ -179,14 +179,14 @@ footer {
 /* Homepage */
 
 .homepage_arrow_wheel {
-    height: 30px;
+  height: 30px;
 }
 
 .homepage_event_pics {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .homepage_grid_event_title {
@@ -226,7 +226,8 @@ footer {
 }
 
 .homepage_grid_item:nth-child(n+3) {
-    grid-column: span 1; /* Each remaining item spans 1 column */
+  grid-column: span 1;
+  /* Each remaining item spans 1 column */
 }
 
 /* Make 2 and 7 smaller */
@@ -244,7 +245,8 @@ footer {
 .startpage_body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: rgba(155, 41, 39, 0.5); /* Rosa Hintergrund */
+  background-color: rgba(155, 41, 39, 0.5);
+  /* Rosa Hintergrund */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -279,7 +281,8 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
 }
 
 .startpage_container {
-  text-align: center; /* Zentriert Text und den Button */
+  text-align: center;
+  /* Zentriert Text und den Button */
 }
 
 .startpage_logo {
@@ -289,10 +292,11 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
   height: 80px;
 }
 
-.startpage_text h1{
-  color: rgb(253,240,213);
+.startpage_text h1 {
+  color: rgb(253, 240, 213);
   font-size: 35px;
-  margin-bottom: 20px; /* Abstand zwischen Text und Button */
+  margin-bottom: 20px;
+  /* Abstand zwischen Text und Button */
 }
 
 .infoBox {
@@ -300,20 +304,22 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
 }
 
 .cta-button {
-  background-color: #8C4F4F; /* Knopfhintergrundfarbe */
-  color: rgb(253,240,213);
+  background-color: #8C4F4F;
+  /* Knopfhintergrundfarbe */
+  color: rgb(253, 240, 213);
   border: none;
   padding: 10px 20px;
   margin-top: 20px;
   font-size: 25px;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0px 0px 30px rgb(253,240,213);
+  box-shadow: 0px 0px 30px rgb(253, 240, 213);
   transition: background-color 0.3s;
 }
 
 .cta-button:hover {
-  background-color: #723838; /* Hover-Effekt */
+  background-color: #723838;
+  /* Hover-Effekt */
 }
 
 /* Über Uns *//* events seite */
@@ -333,20 +339,23 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
   text-align: center;
 }
 
-.rooftop_sailors_image{
+.rooftop_sailors_image {
+  display: block;
   height: auto;
   width:100%;
   display:flex;
   padding-top: 0px;
   margin: 0 auto;
   border-radius: 5px;
-  box-shadow: 1px 1px 15px 8px rgb(253,240,213)
+  box-shadow: 1px 1px 15px 8px hsl(0, 0%, 100%)
+  /*box-shadow: 1px 1px 15px 8px rgb(253,240,213) */
 }
-.text_all_rts h1{
+
+.text_all_rts h1 {
   text-align: center;
 }
 
-.text_all_rts h3{
+.text_all_rts h3 {
   text-align: center;
 }
 .heart_empty{
@@ -354,6 +363,7 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
   float:right;
   height: 40px;
 }
+
 .info_text {
   background-color: rgba(155, 41, 39, 0.5);
   position: relative;
@@ -392,6 +402,7 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
   left: 0;
   width: 100%;
 }
+
 .login_wrapper {
   display: flex;
   justify-content: center;
@@ -405,30 +416,30 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
   padding: 80px;
   margin-top: 65px;
   border-radius: 10px;
-  box-shadow: 0 0 30px rgb(253,240,213);
+  box-shadow: 0 0 30px rgb(253, 240, 213);
   width: 300px;
   font-size: 30px;
-  
+
 }
 
 .login_container h2 {
   margin-bottom: 20px;
   margin-right: 10px;
-  color:rgb(253,240,213);
+  color: rgb(253, 240, 213);
   font-size: 40px;
 }
 
 .btn_submit_color {
   font-size: 20px;
-  color: rgb(253,240,213);
+  color: rgb(253, 240, 213);
 }
 
 .btn_submit_color a {
-  color: rgb(253,240,213);
+  color: rgb(253, 240, 213);
 }
 
 .login_uname {
-  color:rgb(253,240,213);
+  color: rgb(253, 240, 213);
   font-size: 20px;
 }
 
@@ -438,7 +449,7 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
 }
 
 .psw a:hover {
-    color:rgb(246, 231, 201);
+  color: rgb(246, 231, 201);
 }
 
 .login_container input[type="text"],
@@ -446,9 +457,10 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
   width: 100%;
   height: 30px;
   margin-bottom: 10px;
-  border: 1px solid rgb(253,240,213);
+  border: 1px solid rgb(253, 240, 213);
   border-radius: 5px;
 }
+
 .login_container button {
   width: 100%;
   padding: 10px;
@@ -458,6 +470,7 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
   border-radius: 5px;
   cursor: pointer;
 }
+
 .login_container button:hover {
   background-color: rgba(155, 41, 39, 0.5);
 }
@@ -473,20 +486,20 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
 /* Grundstil */
 .filter {
   list-style: none;
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 10px;
   position: relative;
-  margin-top:10px;
-  margin-left:20px;
+  margin-top: 60px;
+  margin-left: 20px;
 }
 
-.filter_img1{
-  width:15px;
-  height:15px;
-  margin-left:1px;
-  margin-right:4px;
+.filter_img1 {
+  width: 15px;
+  height: 15px;
+  margin-left: 1px;
+  margin-right: 4px;
 }
 
 .filter_dropdown {
@@ -495,22 +508,24 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
 }
 
 .filter_dropdown_main {
-  background-color: rgba(194, 193, 193, 0.354); /* Hauptbutton-Farbe */
+  background-color: rgba(194, 193, 193, 0.354);
+  /* Hauptbutton-Farbe */
   color: black;
   padding: 10px 20px 10px 10px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.4);
-  border:none;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+  border: none;
   cursor: pointer;
   font-size: 16px;
 }
 
 /* Dropdown-Inhalte */
 .dropdown_content_filter {
-  display: none; /* Standardmäßig ausgeblendet */
+  display: none;
+  /* Standardmäßig ausgeblendet */
   position: absolute;
   background-color: white;
   min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   list-style: none;
   padding: 0;
@@ -536,13 +551,13 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
 /* Grid */
 
 .grid_container_concert {
-  display:flex;
+  display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 40px;
 }
 
-.grid_item_concert{
+.grid_item_concert {
   height: 200px;
   width: 19%;
   display: flex;
@@ -555,54 +570,50 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
   width: 100%;
 }
 
-.grid_text_item_concert{
-  background-color:rgba(194, 193, 193, 0.354);
+.grid_text_item_concert {
+  background-color: rgba(194, 193, 193, 0.354);
   font-weight: bold;
-  font-size:20px;
+  font-size: 20px;
   font-family: Monospace, Arial, Helvetica, sans-serif;
   display: flex;
-  justify-content:center;
-  text-align:center;
+  justify-content: center;
+  text-align: center;
   align-items: center;
   width: 100%;
   height: 20%;
 }
- 
-.concert_img1{
-  width: 100%; /* Passt die Breite des Bildes an die Breite der Kachel an */
+
+.concert_img1 {
+  width: 100%;
+  /* Passt die Breite des Bildes an die Breite der Kachel an */
   height: 100%;
-  object-fit: cover; /* Schneidet das Bild so zu, dass es die Kachel vollständig ausfüllt */
+  object-fit: cover;
+  /* Schneidet das Bild so zu, dass es die Kachel vollständig ausfüllt */
 }
 
-.concert_img1:hover{
+.concert_img1:hover {
   box-shadow: 0 0 5px 5px rgba(155, 41, 39, 0.5);
 }
-.topic_concert{
+
+.topic_concert {
   font-family: Monospace, Arial, Helvetica, sans-serif;
   font-size: 50px;
-  margin-left:10px;
+  margin-left: 10px;
   margin-top: 55px;
   margin-bottom: 0px;
   text-align: center;
 }
 
-/* Tablet */
-
-@media (max-width:1024px) {
-  .grid_container_concert {
-    grid-template-columns: repeat(3, 1fr);/* 3 gleich große Spalten */
-  }
-}
 /* About Us */
 
 .about_us_container {
   padding: 40px;
   margin-right: 65px auto;
   border-radius: 10px;
-  box-shadow: 0 0 30px rgb(253,240,213);
+  box-shadow: 0 0 30px rgb(253, 240, 213);
   font-size: 20px;
   text-align: left;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -612,25 +623,124 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
   line-height: 1.2;
 }
 
-.aboutus_text{
+.aboutus_text {
   margin-bottom: 10px;
-  color:rgba(155, 41, 39, 0.5);
-  font-size: 0,2 em;
+  color: rgba(155, 41, 39, 0.5);
+  font-size: 0, 2 em;
   text-align: left;
 }
 
-.aboutus_header{
+.aboutus_header {
   margin-bottom: 5px;
-  color:rgba(155, 41, 39, 0.5);
+  color: rgba(155, 41, 39, 0.5);
   font-size: 30px;
   font-weight: bold;
   text-align: left;
 }
 
-.aboutus_wrapper{
+.aboutus_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
+}
+
+/* Tablet */
+
+/* Concert Page */
+
+@media (max-width:1024px) {
+  .grid_container_concert {
+    gap: 30px;
+  }
+
+  .grid_item_concert {
+    height: 220px;
+    width: 45%;
+  }
+
+  .grid_item_concert a {
+    height: 70%;
+  }
+
+  .grid_text_item_concert {
+    height: 25%;
+    font-size: 30px;
+  }
+
+  .concert_img1 {
+    width: 100%;
+    /* Passt die Breite des Bildes an die Breite der Kachel an */
+    height: 100%;
+    object-fit:cover;
+    /* Schneidet das Bild so zu, dass es die Kachel vollständig ausfüllt */
+  }
+
+  .topic_concert {
+    font-size: 60px;
+  }
+
+  .filter_dropdown_main {
+    padding: 10px 20px 10px 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+    margin-top:20px;
+   }
+   .filter_img1 {
+    width: 15px;
+    height: 15px;
+    margin-left: 1px;
+    margin-right: 4px;
+  }
+}
+
+/* Smartphone */
+
+/* Concert Page */
+
+@media (max-width:768px) {
+  .grid_container_concert {
+    gap: 20px;
+  }
+
+  .grid_item_concert {
+    height: 300px;
+    width: 100%;
+  }
+
+  .grid_item_concert a {
+    height: 75%;
+  }
+
+  .grid_text_item_concert {
+    height: 20%;
+    font-size: 30px;
+  }
+
+  .concert_img1 {
+    width: 100%;
+    /* Passt die Breite des Bildes an die Breite der Kachel an */
+    height: 100%;
+    object-fit: cover;
+    /* Schneidet das Bild so zu, dass es die Kachel vollständig ausfüllt */
+  }
+
+  .topic_concert {
+    font-size: 40px;
+  }
+
+  .filter_dropdown_main {
+    padding: 5px 10px 5px 5px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+    margin-top:20px;
+   }
+
+   .filter_img1 {
+    width: 10px;
+    height: 10px;
+    margin-left: 1px;
+    margin-right: 4px;
+  }
 }
