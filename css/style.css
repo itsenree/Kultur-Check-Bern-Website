@@ -527,3 +527,44 @@ text-align: center;
     grid-template-columns: repeat(3, 1fr);/* 3 gleich große Spalten */
   }
 }
+/* About Us */
+
+.about_us_container {
+  padding: 40px;
+  margin-right: 65px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgb(253,240,213);
+  font-size: 20px;
+  text-align: left;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 40%;
+  max-width: 450px;
+  line-height: 1.2;
+}
+
+.aboutus_text{
+  margin-bottom: 10px;
+  color:rgba(155, 41, 39, 0.5);
+  font-size: 0,2 em;
+  text-align: left;
+}
+
+.aboutus_header{
+  margin-bottom: 5px;
+  color:rgba(155, 41, 39, 0.5);
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.aboutus_wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
