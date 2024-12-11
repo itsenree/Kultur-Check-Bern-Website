@@ -4,20 +4,8 @@
   color: black;
 }
 
-html, body {
-min-height: 100%;
-height: 100%;
-}
-
 body {
-    background-color: hsla(40, 91%, 91%, 0.784);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-main {
-  flex: 1;
+  background-color: hsla(40, 91%, 91%, 0.784);
 }
 
 header {
@@ -150,11 +138,18 @@ header {
 /* Footer Design */
 
 footer {
+    /* position: relative; */
+    bottom:0;
     width: 100%;
     background-color: rgb(159, 86, 85);
     text-align: center;
-    padding: 10px;
-    margin-top: 0;
+    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    margin-bottom: 10px;
     /* -> left/right/bottom 0 macht beide alle seiten gleichmässig */
  }
  
@@ -197,12 +192,12 @@ footer {
 .homepage_grid_event_title {
     font-size: 30px;
     text-align: center;
+    height: 15px;
 }
 
 .homepage_event_content {
     background-color: rgba(209, 39, 39, 0.354);
     border-radius: 10px;
-    font-size: 30px;
     margin-top: 30px;
     padding: 10px;
     display: grid;
@@ -221,7 +216,7 @@ footer {
 .homepage_grid_item:nth-child(1) {
     grid-column: span 7; /* Span the first item across all 6 columns */
     width: 100%;
-    height: 50px;
+    height: 40px;
     display: flex; /* Use flexbox for centering */
     justify-content: center; /* Center horizontally */
 }
@@ -244,6 +239,21 @@ footer {
 /* .homepage_grid_item:nth-child(7) {
   display: hidden;
 } */
+
+.map_area {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color:#E7E1D3;
+  margin: 20px 60px;
+}
+
+iframe {
+  align-content: center;
+  width: 800px;
+  height: 500px;
+  border: 0;
+}
 
 /* Startpage */
 
@@ -327,9 +337,7 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
   /* Hover-Effekt */
 }
 
-/* Über Uns */
-
-/* events seite */
+/* Über Uns *//* events seite */
 
 .click_here_rts{
   text-decoration: underline;
@@ -341,7 +349,8 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
 .event_info {
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
+  height: 100%;
   text-align: center;
 }
 
@@ -373,6 +382,7 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
 .info_text {
   background-color: rgba(155, 41, 39, 0.5);
   position: relative;
+  height: 100%;
   width: 500px;
   padding: 50px;
   padding-bottom: 30px;
@@ -380,7 +390,7 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
   border-radius: 10px;
   box-shadow: 1px 1px 15px 8px rgb(159, 86, 85);
   font-size: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 40px; 
 }
 
 .description_rts, .see_more_rts {
@@ -555,28 +565,31 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
 
 /* Grid */
 
-.flexbox_container_concert {
+.grid_container_concert {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 40px;
 }
 
-.flexbox_item_concert {
-  height: 300px;
+.grid_item_concert {
+  height: 200px;
   width: 19%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.flexbox_item_concert a {
-  height: 70%;
+.grid_item_concert a {
+  height: 75%;
   width: 100%;
 }
 
 .flexbox_text_item_concert {
   background-color: rgba(155, 41, 39, 0.2);
+.grid_text_item_concert {
+  background-color: rgba(194, 193, 193, 0.354);
+  font-weight: bold;
   font-size: 20px;
   font-family: Monospace, Arial, Helvetica, sans-serif;
   display: flex;
@@ -584,15 +597,15 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
   text-align: center;
   align-items: center;
   width: 100%;
-  height: 25%;
+  height: 20%;
 }
 
 .concert_img1 {
   width: 100%;
   /* Passt die Breite des Bildes an die Breite der Kachel an */
   height: 100%;
-  object-fit: cover; /* Schneidet das Bild so zu, dass es die Kachel vollständig ausfüllt */
-  object-position: center; /* Positioniert das Bild mittig */
+  object-fit: cover;
+  /* Schneidet das Bild so zu, dass es die Kachel vollständig ausfüllt */
 }
 
 .concert_img1:hover {
@@ -652,7 +665,7 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
 
 /* Tablet */
 
-
+/* Concert Page */
 
 @media (max-width:1024px) {
   /* Navbar */
@@ -677,7 +690,7 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
 
   /* Concert Page */
 
-  .grid_container_concert {
+  .flexbox_container_concert {
     gap: 30px;
   }
 
@@ -686,7 +699,7 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
     width: 45%;
   }
 
-  .flexbox_item_concert a {
+  .grid_item_concert a {
     height: 70%;
   }
 
@@ -723,8 +736,7 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
 
 /* Smartphone */
 
-
-
+/* Concert Page */
 
 @media (max-width:768px) {
   /* Navbar */
@@ -754,16 +766,16 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
     gap: 20px;
   }
 
-  .flexbox_item_concert {
+  .grid_item_concert {
     height: 300px;
     width: 100%;
   }
 
-  .flexbox_item_concert a {
+  .grid_item_concert a {
     height: 75%;
   }
 
-  .flexbox_text_item_concert {
+  .grid_text_item_concert {
     height: 20%;
     font-size: 30px;
   }
