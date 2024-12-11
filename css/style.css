@@ -49,7 +49,7 @@ header {
   justify-content: space-around;
   margin: 0px;
   padding: 5px;
-  background-color: rgba(194, 193, 193, 0.354);
+  background-color: rgba(155, 41, 39, 0.2);
   border-radius: 0px;
   list-style: none;
 }
@@ -576,8 +576,7 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
 }
 
 .flexbox_text_item_concert {
-  background-color: rgba(194, 193, 193, 0.354);
-  font-weight: bold;
+  background-color: rgba(155, 41, 39, 0.2);
   font-size: 20px;
   font-family: Monospace, Arial, Helvetica, sans-serif;
   display: flex;
@@ -594,9 +593,6 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
   height: 100%;
   object-fit: cover; /* Schneidet das Bild so zu, dass es die Kachel vollständig ausfüllt */
   object-position: center; /* Positioniert das Bild mittig */
-
-
-
 }
 
 .concert_img1:hover {
@@ -660,18 +656,33 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
 
 @media (max-width:1024px) {
   /* Navbar */
+
   .navbar {
   font-size: 15px;
-  padding: 5px 10px 0px 10px;
+  padding:10px;
+  }
+
+  .navbar li a{
+    padding:5px 10px;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 15px; /* Schriftgröße der Dropdown-Schaltfläche */
+    padding: 5px 10px; /* Weniger Platz für die Dropdown-Schaltfläche */
+  }
+
+  .dropdown-content {
+    min-width: 140px; /* Reduziert die Breite des Dropdown-Menüs */
   }
 
   /* Concert Page */
+
   .grid_container_concert {
     gap: 30px;
   }
 
   .flexbox_item_concert {
-    height: 220px;
+    height: 240px;
     width: 45%;
   }
 
@@ -680,7 +691,7 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
   }
 
   .flexbox_text_item_concert {
-    height: 40%;
+    height: 30%;
     font-size: 28px;
   }
 
@@ -719,10 +730,24 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
   /* Navbar */
 
   .navbar {
-    font-size: 25px;
+    gap: 10px;
+    width:100%;
+    font-size: 14px;
+    padding:10px;
     }
-
-
+    .navbar li a{
+      padding:5px 8px;
+    }
+    .dropdown .dropbtn {
+      font-size: 14px; /* Schriftgröße der Dropdown-Schal*/
+      padding: 5px 8px; /* Weniger Platz für die 
+    Dropdown-Schaltfläche */
+      width:100%;
+    }
+    .dropdown-content {
+      min-width: 100px; /* Reduziert die Breite des 
+    Dropdown-Menüs */
+    }
 
   /* Concert Page */
   .flexbox_container_concert {
