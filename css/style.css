@@ -550,27 +550,27 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
 
 /* Grid */
 
-.grid_container_concert {
+.flexbox_container_concert {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 40px;
 }
 
-.grid_item_concert {
-  height: 200px;
+.flexbox_item_concert {
+  height: 300px;
   width: 19%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.grid_item_concert a {
-  height: 75%;
+.flexbox_item_concert a {
+  height: 70%;
   width: 100%;
 }
 
-.grid_text_item_concert {
+.flexbox_text_item_concert {
   background-color: rgba(194, 193, 193, 0.354);
   font-weight: bold;
   font-size: 20px;
@@ -580,15 +580,18 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
   text-align: center;
   align-items: center;
   width: 100%;
-  height: 20%;
+  height: 25%;
 }
 
 .concert_img1 {
   width: 100%;
   /* Passt die Breite des Bildes an die Breite der Kachel an */
   height: 100%;
-  object-fit: cover;
-  /* Schneidet das Bild so zu, dass es die Kachel vollständig ausfüllt */
+  object-fit: cover; /* Schneidet das Bild so zu, dass es die Kachel vollständig ausfüllt */
+  object-position: center; /* Positioniert das Bild mittig */
+
+
+
 }
 
 .concert_img1:hover {
@@ -648,25 +651,32 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
 
 /* Tablet */
 
-/* Concert Page */
+
 
 @media (max-width:1024px) {
+  /* Navbar */
+  .navbar {
+  font-size: 15px;
+  padding: 5px 10px 0px 10px;
+  }
+
+  /* Concert Page */
   .grid_container_concert {
     gap: 30px;
   }
 
-  .grid_item_concert {
+  .flexbox_item_concert {
     height: 220px;
     width: 45%;
   }
 
-  .grid_item_concert a {
+  .flexbox_item_concert a {
     height: 70%;
   }
 
-  .grid_text_item_concert {
-    height: 25%;
-    font-size: 30px;
+  .flexbox_text_item_concert {
+    height: 40%;
+    font-size: 28px;
   }
 
   .concert_img1 {
@@ -697,23 +707,33 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
 
 /* Smartphone */
 
-/* Concert Page */
+
+
 
 @media (max-width:768px) {
-  .grid_container_concert {
+  /* Navbar */
+
+  .navbar {
+    font-size: 25px;
+    }
+
+
+
+  /* Concert Page */
+  .flexbox_container_concert {
     gap: 20px;
   }
 
-  .grid_item_concert {
+  .flexbox_item_concert {
     height: 300px;
     width: 100%;
   }
 
-  .grid_item_concert a {
+  .flexbox_item_concert a {
     height: 75%;
   }
 
-  .grid_text_item_concert {
+  .flexbox_text_item_concert {
     height: 20%;
     font-size: 30px;
   }
