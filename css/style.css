@@ -151,10 +151,19 @@ footer{
 /* Grundstil */
 .filter {
   list-style: none;
+  display:flex;
+  align-items:center;
   margin: 0;
   padding: 10px;
   position: relative;
   margin-top:10px;
+}
+
+.filter_img1{
+  width:15px;
+  height:15px;
+  margin-left:1px;
+  margin-right:4px;
 }
 
 .filter_dropdown {
@@ -165,7 +174,7 @@ footer{
 .filter_dropdown_main {
   background-color: rgba(194, 193, 193, 0.354); /* Hauptbutton-Farbe */
   color: black;
-  padding: 10px 20px;
+  padding: 10px 20px 10px 10px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.4);
   border:none;
   cursor: pointer;
@@ -213,13 +222,13 @@ footer{
   gap:5px;
 }
 
-.grid-item-concert{
+.grid_item_concert{
 background-color: blue;
 height:100%;/* Boxen bleiben gleich groß */
 box-sizing:border-box;
 }
 
-.grid-text-item-concert{
+.grid_text_item_concert{
   background-color:rgba(194, 193, 193, 0.354);
   font-weight: bold;
   display:flex;
@@ -229,15 +238,15 @@ box-sizing:border-box;
   font-family: Monospace, Arial, Helvetica, sans-serif;
 }
  
-.concert-img1{
+.concert_img1{
   display:block;
   width: 100%; /* Passt die Breite des Bildes an die Breite der Kachel an */
   height: 100%; /* Passt die Höhe des Bildes an die Höhe der Kachel an */
   object-fit: cover; /* Schneidet das Bild so zu, dass es die Kachel vollständig ausfüllt */
 }
 
-.concert-img1:hover{
-  box-shadow: 0 0 10px 10px rgba(155, 41, 39, 0.5);
+.concert_img1:hover{
+  box-shadow: 0 0 5px 5px rgba(155, 41, 39, 0.5);
 }
 .topic_concert{
   font-family: Monospace, Arial, Helvetica, sans-serif;
@@ -247,3 +256,7 @@ box-sizing:border-box;
   margin-bottom: 0px;
   text-align: center;
 }
+
+/* Tablet */
+
+@media (max-width:1024px) 
