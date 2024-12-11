@@ -190,24 +190,24 @@ footer {
 
 .homepage_grid_event_title {
     font-size: 30px;
-    background-color: rgba(209, 39, 39, 0.354);
+    text-align: center;
 }
 
 .homepage_event_content {
-    background-color: rgb(0, 255, 110);
-    margin-top: 10px;
+    background-color: rgba(209, 39, 39, 0.354);
+    border-radius: 10px;
+    font-size: 30px;
+    margin-top: 30px;
+    padding: 5px;
     display: grid;
     grid-template-columns: repeat(7, 1fr); /* Define 6 equal columns */
     grid-template-rows: 50px; /* Define 2 rows */
     gap: 10px;/* Add spacing between grid items */
-    padding: 10px;
     justify-items: center;
 }
 
 .homepage_grid_item {
     /* border: 1px solid rgba(0, 0, 0, 0.8); */
-    text-align: center;
-    background-color: blue;
     display: flex;
     align-items: center;
 }
@@ -216,11 +216,12 @@ footer {
     grid-column: span 7; /* Span the first item across all 6 columns */
     width: 100%;
     height: 50px;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
 }
 
 .homepage_grid_item:nth-child(2) {
     grid-column: span 1; /* Each remaining item spans 1 column */
-    width: 20%;
 }
 
 .homepage_grid_item:nth-child(n+3) {
@@ -230,11 +231,15 @@ footer {
 /* Make 2 and 7 smaller */
 .homepage_grid_item:nth-child(8) {
     grid-column: span 1; /* Each remaining item spans 1 column */
-    width: 20%;
 }
+
+
+/* .homepage_grid_item:nth-child(7) {
+  display: hidden;
+} */
+
 /* Startpage */
 
-/* Hintergrundfarbe */
 .startpage_body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -243,6 +248,33 @@ footer {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.startpage_selectable_button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(253,240,213);
+  background-color:#8C4F4F;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.startpage_selectable_button:hover{
+ background-color: #723838; /* Hover-Effekt */
+  }
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .startpage_selectable_button {
+box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
+}
+.startpage_buttons_container {
+  margin-top: 20px; /* Abstand zwischen Titel und Buttons */
+  text-align: center; /* Zentriert die Buttons */
 }
 
 .startpage_container {
@@ -263,7 +295,7 @@ footer {
 }
 
 .infoBox {
-text-align: center;
+  text-align: center;
 }
 
 .cta-button {
@@ -271,6 +303,7 @@ text-align: center;
   color: rgb(253,240,213);
   border: none;
   padding: 10px 20px;
+  margin-top: 20px;
   font-size: 25px;
   border-radius: 5px;
   cursor: pointer;
@@ -282,9 +315,7 @@ text-align: center;
   background-color: #723838; /* Hover-Effekt */
 }
 
-/* Über Uns */
-
-/* events seite */
+/* Über Uns *//* events seite */
 
 .click_here_rts{
   text-decoration: underline;
