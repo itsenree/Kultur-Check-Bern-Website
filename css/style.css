@@ -507,27 +507,19 @@ box-sizing:border-box;
 /* About Us */
 
 .about_us_container {
-  padding: 40px;
-  margin-right: 65px auto;
-  border-radius: 10px;
-  box-shadow: 0 0 30px rgb(253,240,213);
-  font-size: 20px;
-  text-align: left;
   display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 40%;
-  max-width: 450px;
-  line-height: 1.2;
+  justify-content:space-around;
+  height: 450px;
 }
 
 .aboutus_text{
   margin-bottom: 10px;
   color:rgba(155, 41, 39, 0.5);
   font-size: 0,2 em;
+  font-size:20px;
   text-align: left;
+  line-height: 1.6;
+  
 }
 
 .aboutus_header{
@@ -539,9 +531,23 @@ box-sizing:border-box;
 }
 
 .aboutus_wrapper{
+  padding: 10px;
+  max-width: 450px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 60%; /* Verkleinert die Breite des Textcontainers */
+}
+
+.gruppen_bild {
+  margin-top: 40px;
+  width: 100%; /* Passt die Breite des Bildes an */
+  max-width: 450px; /* Maximale Breite des Bildes */
+  height: 100%; /* Beibehaltung des Seitenverhältnisses */
+  display: flex; /* Entfernt den zusätzlichen Abstand unter dem Bild */
+  justify-content: end;
+  border-radius: 20px; /* Optional: Rundet die Ecken des Bildes */
+  object-fit: cover;
+  box-shadow: 0 0 10px 10px rgba(155, 41, 39, 0.5)
 }
