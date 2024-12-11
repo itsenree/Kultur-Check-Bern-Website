@@ -247,7 +247,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10px;
+  height: 100vh;
 }
 
 .startpage_selectable_button {
@@ -295,7 +295,7 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
 }
 
 .infoBox {
-text-align: center;
+  text-align: center;
 }
 
 .cta-button {
