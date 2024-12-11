@@ -232,7 +232,6 @@ footer {
 }
 /* Startpage */
 
-/* Hintergrundfarbe */
 .startpage_body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -241,6 +240,33 @@ footer {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.startpage_selectable_button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(253,240,213);
+  background-color:#8C4F4F;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.startpage_selectable_button:hover{
+ background-color: #723838; /* Hover-Effekt */
+  }
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .startpage_selectable_button {
+box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
+}
+.startpage_buttons_container {
+  margin-top: 20px; /* Abstand zwischen Titel und Buttons */
+  text-align: center; /* Zentriert die Buttons */
 }
 
 .startpage_container {
@@ -269,6 +295,7 @@ text-align: center;
   color: rgb(253,240,213);
   border: none;
   padding: 10px 20px;
+  margin-top: 20px;
   font-size: 25px;
   border-radius: 5px;
   cursor: pointer;
@@ -280,9 +307,7 @@ text-align: center;
   background-color: #723838; /* Hover-Effekt */
 }
 
-/* Über Uns */
-
-/* events seite */
+/* Über Uns *//* events seite */
 
 .rooftop_sailors_image{
   display: block;
