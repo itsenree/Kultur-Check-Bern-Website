@@ -139,7 +139,7 @@ header{
 
 footer {
     /* position: relative; */
-    /* bottom:0; */
+    bottom:0;
     width: 100%;
     background-color: rgb(159, 86, 85);
     text-align: center;
@@ -149,7 +149,7 @@ footer {
     margin-top: 10px;
     margin-left: 0 auto;
     margin-right: 0 auto;
-    margin-bottom: ;
+    margin-bottom: 10px;
     /* -> left/right/bottom 0 macht beide alle seiten gleichmässig */
  }
  
@@ -199,7 +199,7 @@ footer {
     border-radius: 10px;
     font-size: 30px;
     margin-top: 30px;
-    padding: 5px;
+    padding: 10px;
     display: grid;
     grid-template-columns: repeat(7, 1fr); /* Define 6 equal columns */
     grid-template-rows: 50px; /* Define 2 rows */
