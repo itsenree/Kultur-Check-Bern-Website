@@ -10,7 +10,6 @@
     <header>
         <a href="../index.html"><img class="logo" src="../img/kcb_logo.png" alt="logo"/></a>
         <a href="#"><img class="Profil-Icon" src="../img/symbols/benutzer.png" alt="Profilbild-Icon"/></a>
-        
     </header>
     <nav>
         <ul class="navbar">
@@ -46,8 +45,14 @@
                 <p class="description_rts"> Die Rooftop Sailors aus Bern begeistern mit ihrem unverwechselbaren Rocksound, der kraftvolle Melodien und mitreissende Energie vereint. Ihre Musik schafft es, direkt ins Herz und Ohr zu gehen – ein Erlebnis, das du nicht verpassen solltest. Am 28. Januar 2025 hast du die Chance, die Band live auf der Bühne zu erleben. Sei dabei und lass dich von ihrem Sound mitreissen!</a> </p>
                 <p class="see_more_rts">Du willst mehr erfahren?</p>
                 <p class="click_here_rts"><a href="https://www.rooftopsailors.com">Klicke hier!</a></p>
+                <!-- <img class="heart_empty" src="../img/symbols/herzleer.png" alt="heartempty"> -->
             </div>
-            <img class="heart_empty" src="../img/symbols/herzleer.png" alt="heartempty">
+            <!-- Hidden checkbox -->
+        <input type="checkbox" id="heartToggle" class="heart_checkbox">
+        <!-- Label as the clickable button -->
+        <label for="heartToggle" class="heart_button">
+            <img class="heart_image" src="../img/symbols/herzleer.png" alt="heartempty">
+        </label>
         </article>
     </main>
     <footer>
@@ -60,8 +65,7 @@
                 <li><a href="#">Cookies</a></li>
             </ul>
             <p class="rights"> © 2024 Kultur Check Bärn. Alle Rechte vorbehalten.</p>
-        </div>
-                
+        </div>  
     </footer>
 </body>
 </html>
