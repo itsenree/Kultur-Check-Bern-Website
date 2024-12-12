@@ -50,8 +50,8 @@ header {
   /* align-self: start; */
   justify-content: space-around;
   margin: 0px;
-  padding: 5px;
-  background-color: rgba(194, 193, 193, 0.354);
+  padding: 13px;
+  background-color: rgba(155, 41, 39, 0.2);
   border-radius: 0px;
   list-style: none;
 }
@@ -60,7 +60,7 @@ header {
 
 .navbar li a {
   font-family: Monospace, Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 23px;
   color: black;
   /* folgendes -> macht damit die abstände gleichmässig auch bei veränderungen der Seite */
   box-sizing: border-box;
