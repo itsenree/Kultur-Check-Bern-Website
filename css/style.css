@@ -270,7 +270,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked + .startpage_selectable_button {
-box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
+box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
 }
 .startpage_buttons_container {
   margin-top: 20px; /* Abstand zwischen Titel und Buttons */
@@ -373,6 +373,8 @@ text-align: center;
   font-size: large;
   text-align:justify;
 }
+
+
 /* Login Design */
 
 .body_login {
@@ -631,4 +633,54 @@ text-align: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
+}
+
+
+.profile_icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+.sidebar {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0px; /* Passen Sie diesen Wert an, um die Dropdown-Position zu justieren */
+  width: 150px; /* Passen Sie die Breite der Sidebar an */
+  background-color: rgb(159, 86, 85);
+  padding-top: 20px;
+  z-index: 1000;
+}
+
+.profile-container:hover .sidebar {
+  display: block;
+}
+
+.sidebar_dropdown {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.sidebar_dropdown a {
+  color: black;
+  padding: 10px 0;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.sidebar_dropdown a:hover {
+
+  color: rgb(253,240,213);
 }
