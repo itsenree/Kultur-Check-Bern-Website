@@ -587,9 +587,6 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
 
 .flexbox_text_item_concert {
   background-color: rgba(155, 41, 39, 0.2);
-.grid_text_item_concert {
-  background-color: rgba(194, 193, 193, 0.354);
-  font-weight: bold;
   font-size: 20px;
   font-family: Monospace, Arial, Helvetica, sans-serif;
   display: flex;
