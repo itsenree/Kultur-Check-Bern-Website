@@ -364,10 +364,44 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
 .text_all_rts h3 {
   text-align: center;
 }
-.heart_empty{
+.heart_image{
   margin-block-end:10px;
-  float:right;
-  height: 40px;
+  width: 40px;
+  height: auto;
+  display: block;
+  transition: 0.3s ease;
+}
+.heart_button:hover, .heart_empty{
+  transform: scale(1.1);
+}
+
+.heart_button{
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline-block
+}
+
+/* Style the heart image */
+.heart_image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth animations */
+}
+
+/* When the checkbox is checked, change the image */
+.heart_checkbox:checked, .heart_button, .heart_image {
+  content: url("../img/symbols/herz.png");/* Change image source */
+  transform: scale(1.2); /* Optional zoom effect */
+  opacity: 0.9; /* Optional fade effect */
+}
+
+/* Add hover effect */
+.heart_button:hover .heart_image {
+  transform: scale(1.1); /* Slight zoom on hover */
+  opacity: 1;
 }
 
 .info_text {
