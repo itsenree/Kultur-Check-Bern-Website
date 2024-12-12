@@ -358,6 +358,7 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
   justify-content: center;
   /* align-items: center;
   height: 100%; */
+  margin-left: 40px;
   align-items: start;
   text-align: center;
 }
@@ -378,47 +379,20 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
   text-align: center;
 }
 
+.heart_empty {
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/symbols/herzleer.png);
+  background-size: cover;
+  float: right;
+}
+
+.heart_empty:hover{
+  background-image: url(../img/symbols/herz.png)
+}
+
 .text_all_rts h3 {
   text-align: center;
-}
-.heart_image{
-  margin-block-end:10px;
-  width: 40px;
-  height: auto;
-  display: block;
-  transition: 0.3s ease;
-}
-.heart_button:hover, .heart_empty{
-  transform: scale(1.1);
-}
-
-.heart_button{
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  display: inline-block
-}
-
-/* Style the heart image */
-.heart_image {
-  width: 100%;
-  height: 100%;
-  display: block;
-  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth animations */
-}
-
-/* When the checkbox is checked, change the image */
-.heart_checkbox:checked, .heart_button, .heart_image {
-  content: url("../img/symbols/herz.png");/* Change image source */
-  transform: scale(1.2); /* Optional zoom effect */
-  opacity: 0.9; /* Optional fade effect */
-}
-
-/* Add hover effect */
-.heart_button:hover .heart_image {
-  transform: scale(1.1); /* Slight zoom on hover */
-  opacity: 1;
 }
 
 .info_text {
@@ -432,7 +406,7 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
   border-radius: 10px;
   box-shadow: 1px 1px 15px 8px rgb(159, 86, 85);
   font-size: 20px;
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
 }
 
 .description_rts, .see_more_rts {
@@ -441,6 +415,64 @@ box-shadow: 0 0 30px rgb(253,240,213); /* Box shadow when selected */
   font-size: large;
   text-align:justify;
 }
+
+/* .info_text, .ticket_section{
+  position: relative;
+} */
+
+.ticket_section {
+  background-color: rgba(194, 193, 193, 0.354);
+  box-shadow: 1px 1px 15px 8px hsla(0, 1%, 45%, 0.54);
+  width: 300px;
+  height: 300px;
+  padding: 50px;
+  padding-bottom: 40%;
+  margin-top: 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-bottom: 40px; 
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between button and text field */
+}
+
+.buy_ticket {
+  padding: 10px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgba(155, 41, 39, 0.85); /* Green button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 5px rgb(159, 86, 85);
+}
+
+.buy_ticket:hover {
+  background-color: rgb(155, 41, 39);
+}
+
+.ticket_input {
+  padding: 10px;
+  font-size: 16px;
+  width: 150px; /* Width of the text field */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(155, 41, 39, 0.448);
+}
+
+.ticket_input:focus {
+  outline: none;
+  border-color: rgb(155, 41, 39); /* Blue outline on focus */
+  box-shadow: 0 0 5px rgb(155, 41, 39);
+}
+
+.info_ticket_event {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
 /* Login Design */
 
 .body_login {
