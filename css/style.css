@@ -945,13 +945,13 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
   }
   
   .aboutus_text {
-    font-size: 22px; /* Verkleinert die Schriftgröße für Smartphones */
+    font-size: 28px; /* Verkleinert die Schriftgröße für Smartphones */
     line-height: 1.0; /* Passt den Zeilenabstand an */
   }
 
   
   .aboutus_header {
-    font-size: 30px; /* Verkleinert die Schriftgröße für Smartphones */
+    font-size: 35px; /* Verkleinert die Schriftgröße für Smartphones */
   }
   
   .aboutus_wrapper {
@@ -963,7 +963,7 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
   .gruppen_bild {
     margin-top: 20px;
     width: 100%;
-    max-width: 400px; /* Setzt die maximale Breite des Bildes */
+    max-width: 550px; /* Setzt die maximale Breite des Bildes */
     height: auto;
   }
 }
