@@ -4,7 +4,8 @@
   color: black;
 }
 
-html, body {
+html,
+body {
   min-height: 100%;
   height: 100%;
 }
@@ -18,7 +19,7 @@ body {
 }
 
 main {
-flex: 1;
+  flex: 1;
 }
 
 
@@ -152,38 +153,43 @@ header {
 /* Footer Design */
 
 footer {
-    /* width: 100%; */
-    background-color: rgb(159, 86, 85);
-    text-align: center;
-    padding: 10px;
-    margin-top: 0;
-    /* -> left/right/bottom 0 macht beide alle seiten gleichmässig */
- }
- 
- .logo_footer{
-     display:block;
-     margin-left: auto;
-     margin-right: auto;
-     height: 40px;
-     margin-bottom: 10px;
- }
- 
- .footer_line{
-     list-style:none;
-     display:flex;
-     justify-content: space-around;
-     font-size: 15px;
-     padding: 0;
-     margin: 0 0 10px 0;
- }
- 
- .rights{
-     display:block;
-     text-align: center;
-     font-size: 13px;
- }
+  /* width: 100%; */
+  background-color: rgb(159, 86, 85);
+  text-align: center;
+  padding: 10px;
+  margin-top: 0;
+  /* -> left/right/bottom 0 macht beide alle seiten gleichmässig */
+}
+
+.logo_footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.footer_line {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.rights {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+}
 
 /* Homepage */
+
+.all_event_container {
+  margin: 30px 60px;
+  padding: 0;
+}
 
 .homepage_arrow_wheel {
   height: 30px;
@@ -197,28 +203,31 @@ footer {
 }
 
 .homepage_grid_event_title {
-    font-size: 30px;
-    text-align: center;
-    height: 15px;
+  font-size: 30px;
+  text-align: center;
+  height: 15px;
 }
 
 .homepage_event_content {
-    background-color: rgba(209, 39, 39, 0.354);
-    border-radius: 10px;
-    margin-top: 30px;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr); /* Define 6 equal columns */
-    grid-template-rows: 50px; /* Define 2 rows */
-    gap: 10px;/* Add spacing between grid items */
-    justify-items: center;
+  background-color: rgba(209, 39, 39, 0.354);
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  /* Define 6 equal columns */
+  grid-template-rows: 50px;
+  /* Define 2 rows */
+  gap: 10px;
+  /* Add spacing between grid items */
+  justify-items: center;
 }
 
 .homepage_grid_item {
-    display: flex;
-    align-items: center;
-    position: relative;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-align: center;
 }
 
 .homepage_grid_item_text {
@@ -233,15 +242,19 @@ footer {
 }
 
 .homepage_grid_item:nth-child(1) {
-    grid-column: span 7; /* Span the first item across all 6 columns */
-    width: 100%;
-    height: 40px;
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Center horizontally */
+  grid-column: span 7;
+  /* Span the first item across all 6 columns */
+  width: 100%;
+  height: 40px;
+  display: flex;
+  /* Use flexbox for centering */
+  justify-content: center;
+  /* Center horizontally */
 }
 
 .homepage_grid_item:nth-child(2) {
-    grid-column: span 1; /* Each remaining item spans 1 column */
+  grid-column: span 1;
+  /* Each remaining item spans 1 column */
 }
 
 .homepage_grid_item:nth-child(n+3) {
@@ -251,7 +264,8 @@ footer {
 
 /* Make 2 and 7 smaller */
 .homepage_grid_item:nth-child(8) {
-    grid-column: span 1; /* Each remaining item spans 1 column */
+  grid-column: span 1;
+  /* Each remaining item spans 1 column */
 }
 
 
@@ -269,7 +283,7 @@ footer {
 
 .culture_video {
   padding: 10px;
-  background-color:#E7E1D3;
+  background-color: #E7E1D3;
 }
 
 .culture_video iframe {
@@ -284,7 +298,7 @@ footer {
   padding: 10px 10px 10px 10px;
   margin: auto; */
   padding: 10px;
-  background-color:#E7E1D3;
+  background-color: #E7E1D3;
 }
 
 .map_area iframe {
@@ -312,26 +326,31 @@ footer {
   margin: 5px;
   border: none;
   border-radius: 5px;
-  color: rgb(253,240,213);
-  background-color:#8C4F4F;
+  color: rgb(253, 240, 213);
+  background-color: #8C4F4F;
   cursor: pointer;
   display: inline-block;
 }
 
-.startpage_selectable_button:hover{
- background-color: #723838; /* Hover-Effekt */
-  }
+.startpage_selectable_button:hover {
+  background-color: #723838;
+  /* Hover-Effekt */
+}
 
 input[type="checkbox"] {
   display: none;
 }
 
-input[type="checkbox"]:checked + .startpage_selectable_button {
-box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
+input[type="checkbox"]:checked+.startpage_selectable_button {
+  box-shadow: 0 0 30px rgb(254, 237, 203);
+  /* Box shadow when selected */
 }
+
 .startpage_buttons_container {
-  margin-top: 20px; /* Abstand zwischen Titel und Buttons */
-  text-align: center; /* Zentriert die Buttons */
+  margin-top: 20px;
+  /* Abstand zwischen Titel und Buttons */
+  text-align: center;
+  /* Zentriert die Buttons */
 }
 
 .startpage_container {
@@ -376,14 +395,15 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
   /* Hover-Effekt */
 }
 
-/* Über Uns *//* events seite */
+/* Über Uns */
+/* events seite */
 
-.click_here_rts{
+.click_here_rts {
   text-decoration: underline;
   text-align: justify;
   font-family: Arial;
   font-size: large;
-} 
+}
 
 .event_info {
   display: flex;
@@ -398,13 +418,13 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
 .rooftop_sailors_image {
   display: block;
   height: auto;
-  width:100%;
-  display:flex;
+  width: 100%;
+  display: flex;
   padding-top: 0px;
   margin: 0 auto;
   border-radius: 5px;
   box-shadow: 1px 1px 15px 8px hsl(0, 0%, 100%)
-  /*box-shadow: 1px 1px 15px 8px rgb(253,240,213) */
+    /*box-shadow: 1px 1px 15px 8px rgb(253,240,213) */
 }
 
 .text_all_rts h1 {
@@ -419,7 +439,7 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
   float: right;
 }
 
-.heart_empty:hover{
+.heart_empty:hover {
   background-image: url(../img/symbols/herz.png)
 }
 
@@ -441,11 +461,12 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
   margin-bottom: 40px;
 }
 
-.description_rts, .see_more_rts {
-  position:relative;
+.description_rts,
+.see_more_rts {
+  position: relative;
   font-family: Arial;
   font-size: large;
-  text-align:justify;
+  text-align: justify;
 }
 
 /* .info_text, .ticket_section{
@@ -462,10 +483,11 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
   margin-top: 40px;
   border-radius: 5px;
   font-size: 20px;
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
   display: flex;
   align-items: center;
-  gap: 10px; /* Space between button and text field */
+  gap: 10px;
+  /* Space between button and text field */
 }
 
 .buy_ticket {
@@ -473,7 +495,8 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   cursor: pointer;
-  background-color: rgba(155, 41, 39, 0.85); /* Green button */
+  background-color: rgba(155, 41, 39, 0.85);
+  /* Green button */
   color: white;
   border: none;
   border-radius: 5px;
@@ -487,7 +510,8 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
 .ticket_input {
   padding: 10px;
   font-size: 16px;
-  width: 150px; /* Width of the text field */
+  width: 150px;
+  /* Width of the text field */
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(155, 41, 39, 0.448);
@@ -495,7 +519,8 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
 
 .ticket_input:focus {
   outline: none;
-  border-color: rgb(155, 41, 39); /* Blue outline on focus */
+  border-color: rgb(155, 41, 39);
+  /* Blue outline on focus */
   box-shadow: 0 0 5px rgb(155, 41, 39);
 }
 
@@ -513,7 +538,7 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  }
+}
 
 .header_login {
   display: flex;
@@ -564,8 +589,9 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
   font-size: 20px;
 }
 
-.psw, .psw a {
-  color:rgb(253,240,213);
+.psw,
+.psw a {
+  color: rgb(253, 240, 213);
   font-size: 10px;
 }
 
@@ -709,7 +735,8 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
   height: 100%;
   object-fit: cover;
   /* Schneidet das Bild so zu, dass es die Kachel vollständig ausfüllt */
-  object-position: center; /* Positioniert das Bild mittig */
+  object-position: center;
+  /* Positioniert das Bild mittig */
 }
 
 .concert_img1:hover {
@@ -772,7 +799,8 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
   padding: 10px;
   max-width: 450px;
   justify-content: start;
-  width: 60%; /* Verkleinert die Breite des Textcontainers */
+  width: 60%;
+  /* Verkleinert die Breite des Textcontainers */
 }
 
 
@@ -795,8 +823,10 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
   display: none;
   position: fixed;
   right: 0;
-  top: 0px; /* Passen Sie diesen Wert an, um die Dropdown-Position zu justieren */
-  width: 150px; /* Passen Sie die Breite der Sidebar an */
+  top: 0px;
+  /* Passen Sie diesen Wert an, um die Dropdown-Position zu justieren */
+  width: 150px;
+  /* Passen Sie die Breite der Sidebar an */
   background-color: rgb(159, 86, 85);
   padding-top: 20px;
   z-index: 1000;
@@ -822,16 +852,22 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
 
 .sidebar_dropdown a:hover {
 
-  color: rgb(253,240,213);
+  color: rgb(253, 240, 213);
 }
+
 .gruppen_bild {
   margin-top: 40px;
-  width: 100%; /* Passt die Breite des Bildes an */
-  max-width: 450px; /* Maximale Breite des Bildes */
-  height: 100%; /* Beibehaltung des Seitenverhältnisses */
-  display: flex; /* Entfernt den zusätzlichen Abstand unter dem Bild */
+  width: 100%;
+  /* Passt die Breite des Bildes an */
+  max-width: 450px;
+  /* Maximale Breite des Bildes */
+  height: 100%;
+  /* Beibehaltung des Seitenverhältnisses */
+  display: flex;
+  /* Entfernt den zusätzlichen Abstand unter dem Bild */
   justify-content: end;
-  border-radius: 20px; /* Optional: Rundet die Ecken des Bildes */
+  border-radius: 20px;
+  /* Optional: Rundet die Ecken des Bildes */
   object-fit: cover;
   box-shadow: 0 0 10px 10px rgba(155, 41, 39, 0.5)
 }
@@ -841,7 +877,7 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
 /* Concert Page */
 
 @media (max-width:1024px) {
-  
+
   /* Navbar */
   .navbar {
     font-size: 15px;
@@ -871,7 +907,7 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
     width: 100%;
     /* Passt die Breite des Bildes an die Breite der Kachel an */
     height: 100%;
-    object-fit:cover;
+    object-fit: cover;
     /* Schneidet das Bild so zu, dass es die Kachel vollständig ausfüllt */
   }
 
@@ -883,14 +919,16 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
     padding: 10px 20px 10px 10px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
     font-size: 15px;
-    margin-top:20px;
-   }
-   .filter_img1 {
+    margin-top: 20px;
+  }
+
+  .filter_img1 {
     width: 15px;
     height: 15px;
     margin-left: 1px;
     margin-right: 4px;
   }
+
   /* About Us Page  */
 
   .about_us_container {
@@ -900,42 +938,47 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
     justify-content: center;
     height: auto;
     padding: 20px;
-  
+
   }
-  
+
   .aboutus_text {
     margin-bottom: 10px;
     font-size: 20px;
     text-align: center;
     line-height: 1.0;
   }
-  
+
   .aboutus_header {
     margin-bottom: 5px;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
   }
-  
+
   .aboutus_wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 10px;
     max-width: 600px;
-    width: 100%; /* Verkleinert die Breite des Textcontainers */
+    width: 100%;
+    /* Verkleinert die Breite des Textcontainers */
   }
-  
+
   .gruppen_bild {
     margin-top: 20px;
-    width: 100%; /* Passt die Breite des Bildes an */
-    max-width: 450px; /* Maximale Breite des Bildes */
-    height: auto; /* Beibehaltung des Seitenverhältnisses */
-    border-radius: 20px; /* Optional: Rundet die Ecken des Bildes */
+    width: 100%;
+    /* Passt die Breite des Bildes an */
+    max-width: 450px;
+    /* Maximale Breite des Bildes */
+    height: auto;
+    /* Beibehaltung des Seitenverhältnisses */
+    border-radius: 20px;
+    /* Optional: Rundet die Ecken des Bildes */
     object-fit: cover;
 
 
-}
+  }
 }
 
 /* Smartphone */
@@ -945,13 +988,145 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
 
 @media (max-width:768px) {
 
-    /* Navbar */
+  /* Navbar */
 
   .navbar {
     font-size: 25px;
-    }
+  }
 
-    /* Concert Page */
+  /* Homepage */
+  
+  .all_event_container {
+    margin: 0px 1px;
+    padding: 0;
+  }
+
+  .homepage_arrow_wheel {
+    height: 40px;
+    width: 100%;
+  }
+
+  .homepage_event_pics {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .homepage_grid_item_text {
+    hyphens: auto;
+    overflow-wrap: break-word;
+    width: 80%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 95%;
+    background-color: rgba(0, 0, 0, 0.642);
+    border-radius: 5px;
+  }
+
+  .homepage_grid_event_title {
+    font-size: 30px;
+    text-align: center;
+    height: 15px;
+  }
+
+  .homepage_event_content {
+    background-color: rgba(209, 39, 39, 0.354);
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 0.5fr 3fr 3fr 3fr 0.5fr;
+    /* Define 6 equal columns */
+    grid-template-rows: 50px;
+    /* Define 2 rows */
+    gap: 10px;
+    /* Add spacing between grid items */
+    justify-items: center;
+  }
+
+  .homepage_grid_item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: center;
+  }
+
+  .homepage_grid_item:nth-child(1) {
+    grid-column: span 5;
+    /* Span the first item across all 6 columns */
+    width: 100%;
+    height: 40px;
+    display: flex;
+    /* Use flexbox for centering */
+    justify-content: center;
+    /* Center horizontally */
+  }
+
+  .homepage_grid_item:nth-child(2) {
+    grid-column: span 1;
+    /* Each remaining item spans 1 column */
+  }
+
+  .homepage_grid_item:nth-child(n+3) {
+    grid-column: span 1;
+    /* Each remaining item spans 1 column */
+  }
+
+  .homepage_grid_item:nth-child(6),
+  .homepage_grid_item:nth-child(7) {
+    display: none;
+  }
+
+  /* Make 2 and 7 smaller */
+  .homepage_grid_item:nth-child(8) {
+    grid-column: span 1;
+    /* Each remaining item spans 1 column */
+  }
+
+  .homepage_iframe_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .culture_video {
+    padding: 5px;
+    background-color: #E7E1D3;
+    width: 100%;
+  }
+
+  .culture_video iframe {
+    align-content: center;
+    width: 100%;
+    height: 200px;
+    border: 0;
+  }
+
+  .map_area {
+    /* align-content: center;
+  padding: 10px 10px 10px 10px;
+  margin: auto; */
+    width: 100%;
+    padding: 10px;
+    background-color: #E7E1D3;
+  }
+
+  .map_area iframe {
+    /* align-content: center; */
+    width: 100%;
+    height: 300px;
+    border: 0;
+  }
+
+  /* Concert Page */
   .flexbox_container_concert {
     gap: 20px;
   }
@@ -986,46 +1161,51 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
     padding: 5px 10px 5px 5px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     font-size: 13px;
-    margin-top:20px;
-   }
+    margin-top: 20px;
+  }
 
-   .filter_img1 {
+  .filter_img1 {
     width: 10px;
     height: 10px;
     margin-left: 1px;
     margin-right: 4px;
   }
 
-   /* About Us Page  */
+  /* About Us Page  */
 
-   .about_us_container {
+  .about_us_container {
     flex-direction: column;
     align-items: center;
-  justify-content: center;
-  padding: 10px;
-  
-  }
-  
-  .aboutus_text {
-    font-size: 28px; /* Verkleinert die Schriftgröße für Smartphones */
-    line-height: 1.0; /* Passt den Zeilenabstand an */
+    justify-content: center;
+    padding: 10px;
+
   }
 
-  
-  .aboutus_header {
-    font-size: 35px; /* Verkleinert die Schriftgröße für Smartphones */
+  .aboutus_text {
+    font-size: 28px;
+    /* Verkleinert die Schriftgröße für Smartphones */
+    line-height: 1.0;
+    /* Passt den Zeilenabstand an */
   }
-  
+
+
+  .aboutus_header {
+    font-size: 35px;
+    /* Verkleinert die Schriftgröße für Smartphones */
+  }
+
   .aboutus_wrapper {
     width: 90%;
-    max-width: 90%; /* Setzt die maximale Breite des Textcontainers */
+    max-width: 90%;
+    /* Setzt die maximale Breite des Textcontainers */
     padding: 10px;
   }
-  
+
   .gruppen_bild {
     margin-top: 20px;
     width: 100%;
-    max-width: 550px; /* Setzt die maximale Breite des Bildes */
+    max-width: 550px;
+    /* Setzt die maximale Breite des Bildes */
     height: auto;
   }
 }
