@@ -191,8 +191,8 @@ footer {
 
 .homepage_event_pics {
   display: block;
-  width: 100%;
-  height: auto;
+  width: 200px;
+  height: 150px;
   object-fit: cover;
 }
 
@@ -215,9 +215,21 @@ footer {
 }
 
 .homepage_grid_item {
-    /* border: 1px solid rgba(0, 0, 0, 0.8); */
     display: flex;
     align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.homepage_grid_item_text {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.642);
+  border-radius: 5px;
 }
 
 .homepage_grid_item:nth-child(1) {
