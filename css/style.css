@@ -890,11 +890,12 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 .profile_icon {
   position: fixed;
   top: 20px;
-  right: 20px;
+  right: 10px;
   width: 40px;
   height: 40px;
   cursor: pointer;
   z-index: 1000;
+  padding-bottom: 15px;
 }
 
 .profile-container {
@@ -903,15 +904,14 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 }
 
 .sidebar {
+  margin-top: 37px;
   display: none;
   position: fixed;
   right: 0;
-  top: 0px;
   /* Passen Sie diesen Wert an, um die Dropdown-Position zu justieren */
   width: 150px;
   /* Passen Sie die Breite der Sidebar an */
   background-color: rgb(159, 86, 85);
-  padding-top: 20px;
   z-index: 1000;
 }
 
