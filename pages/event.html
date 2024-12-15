@@ -3,26 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Events_Kultur Check Bärn</title>
     <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
     <header>
-        <a href="../index.html"><img class="logo" src="../img/kcb_logo.png" alt="logo"/></a>
-        <a href="#"><img class="Profil-Icon" src="../img/symbols/benutzer.png" alt="Profilbild-Icon"/></a>
+        <a href="index.html"><img class="logo" src="img/kcb_logo.png" alt="logo"/></a>
+        <div class="profile-container">
+            <img class="profile_icon" src="../img/symbols/benutzer.png" alt="Profilbild-Icon"/>
+            <div class="sidebar">
+                <div class="sidebar_dropdown">
+                    <a href="#">Profil</a>
+                    <a href="#">Bubbles</a>
+                    <a href="startpage.html">Kulturoase</a>
+                    <a href="#">Einstellungen</a>
+                    <a href="#">Ausloggen</a>
+        </div>
     </header>
     <nav>
         <ul class="navbar">
-            <li><a href="../index.html">Home</a></li>
+            <li><a class="active_btn" href="../index.html">Home</a></li>
             <!-- dropdown im navbar -->
             <div class="dropdown">
                 <a href="../index.html">
-                    <button class="active_btn">Events 
+                    <button class="dropbtn">Events 
                         <i class="fa fa-caret-down"></i>
                     </button>
                 </a>
                 <div class="dropdown-content">
-                  <a href="topic.html">Konzerte</a>
+                  <a href="../pages/topic.html">Konzerte</a>
                   <a href="#">Museen</a>
                   <a href="#">Theater</a>
                   <a href="#">Markt</a>
@@ -32,27 +42,42 @@
                 </div>
               </div> 
             <li><a href="#">Kalender</a></li>
-            <li><a href="about_us.html">Über uns</a></li>
+            <li><a href="../pages/about_us.html">Über uns</a></li>
             <li><a href="#">Kontakt</a></li>
         </ul>
     </nav>
     <main class="event_info">
         <article class="info_text">
-            <img class="rooftop_sailors_image" src="../img/Rooftop-Sailors-1024x665.jpg" alt= "rooftop_sailors"></img>
+            <img class="rooftop_sailors_image" src="../img/rooftop_sailors.jpg" alt= "rooftop_sailors"></img>
             <div class="text_all_rts">
                 <h1 class="title_rts">Rooftop Sailors </a></h1>
                 <h3 class="details_rts">Bern - Bierhübeli am 28. Januar 2024</a></h3>
                 <p class="description_rts"> Die Rooftop Sailors aus Bern begeistern mit ihrem unverwechselbaren Rocksound, der kraftvolle Melodien und mitreissende Energie vereint. Ihre Musik schafft es, direkt ins Herz und Ohr zu gehen – ein Erlebnis, das du nicht verpassen solltest. Am 28. Januar 2025 hast du die Chance, die Band live auf der Bühne zu erleben. Sei dabei und lass dich von ihrem Sound mitreissen!</a> </p>
                 <p class="see_more_rts">Du willst mehr erfahren?</p>
                 <p class="click_here_rts"><a href="https://www.rooftopsailors.com">Klicke hier!</a></p>
-                <!-- <img class="heart_empty" src="../img/symbols/herzleer.png" alt="heartempty"> -->
             </div>
-            <!-- Hidden checkbox -->
-        <input type="checkbox" id="heartToggle" class="heart_checkbox">
-        <!-- Label as the clickable button -->
-        <label for="heartToggle" class="heart_button">
-            <img class="heart_image" src="../img/symbols/herzleer.png" alt="heartempty">
-        </label>
+            <div class="heart_empty"></div>
+        </article>
+        <article>
+             <div class="ticket_section">
+                <button class="buy_ticket">Ticket kaufen</button>
+                <input type="text" class="ticket_input" placeholder="Verfügbarkeit prüfen">
+                <p class="bierhuebeli_address">Bierhübeli, Bern (CH)</p>
+                    <a href="https://bierhuebeli.ch">
+                        <img class="location_icon" src="../img/location_icon.png" alt="Location Icon">
+                    </a>
+                <p class="event_date">28. Januar 2025</p>
+                    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20250128T180000Z%2F20250128T210000Z&details=Die%20Rooftop%20Sailors%20aus%20Bern%20begeistern%20mit%20ihrem%20unverwechselbaren%20Rocksound%2C%20der%20kraftvolle%20Melodien%20und%20mitreissende%20Energie%20vereint.%20Ihre%20Musik%20schafft%20es%2C%20direkt%20ins%20Herz%20und%20Ohr%20zu%20gehen%20%E2%80%93%20ein%20Erlebnis%2C%20das%20du%20nicht%20verpassen%20solltest.%20Am%2028.%20Januar%202025%20hast%20du%20die%20Chance%2C%20die%20Band%20live%20auf%20der%20B%C3%BChne%20zu%20erleben.%20Sei%20dabei%20und%20lass%20dich%20von%20ihrem%20Sound%20mitreissen%21&location=Bierh%C3%BCbeli%2C%20Bern%20%28CH%29&text=Rooftop%20Sailors">
+                        <img class="calendar_icon" src="../img/calendar.png" alt="Calendar Icon">
+                    </a>
+                <p class="event_time">19:00 - 22:00 Uhr</p>
+                    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20250128T180000Z%2F20250128T210000Z&details=Die%20Rooftop%20Sailors%20aus%20Bern%20begeistern%20mit%20ihrem%20unverwechselbaren%20Rocksound%2C%20der%20kraftvolle%20Melodien%20und%20mitreissende%20Energie%20vereint.%20Ihre%20Musik%20schafft%20es%2C%20direkt%20ins%20Herz%20und%20Ohr%20zu%20gehen%20%E2%80%93%20ein%20Erlebnis%2C%20das%20du%20nicht%20verpassen%20solltest.%20Am%2028.%20Januar%202025%20hast%20du%20die%20Chance%2C%20die%20Band%20live%20auf%20der%20B%C3%BChne%20zu%20erleben.%20Sei%20dabei%20und%20lass%20dich%20von%20ihrem%20Sound%20mitreissen%21&location=Bierh%C3%BCbeli%2C%20Bern%20%28CH%29&text=Rooftop%20Sailors">
+                        <img class="time_icon" src="../img/clock.png" alt="Clock Icon">
+                    </a>
+            </div>
+            <div class="map_bierhuebeli">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2723.276520170883!2d7.435242176356422!3d46.956256771137575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e399685190969%3A0xafa3c2f13936c964!2sBierh%C3%BCbeli!5e0!3m2!1sde!2sch!4v1734124397720!5m2!1sde!2sch" allowfullscreen="lazy" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </article>
     </main>
     <footer>
