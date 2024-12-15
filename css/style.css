@@ -456,6 +456,7 @@ box-shadow: 0 0 30px rgb(254, 237, 203); /* Box shadow when selected */
 .header_login {
   display: flex;
   align-items: center;
+  padding: 10px;
   position: absolute;
   top: 0;
   left: 0;
