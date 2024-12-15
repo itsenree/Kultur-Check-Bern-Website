@@ -36,7 +36,7 @@ header {
   height: 70px;
 }
 
-.Profil-Icon {
+.profile_icon {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -1093,20 +1093,18 @@ margin: auto; */
   /* event-view-seite */
 
   .info_text {
-    width: 80%; /* Slightly wider for larger screens */
+    width: 80%;
     margin: 20px auto; /* Center horizontally */
     order: -1; /* Moves .info_text to the top of the flex container */
     position: static; /* Reset positioning */
   }
 
-  /* Stack .ticket_section and .map_bierhuebeli vertically */
   .ticket_section, .map_bierhuebeli {
-    width: 80%; /* Adjust width for larger screens */
+    width: 90%; /* Adjust width for larger screens */
     margin: 20px auto; /* Center horizontally with spacing */
     position: static; /* Reset positioning */
   }
 
-  /* Adjust the layout for all icons and text */
   .calendar_icon, .time_icon, .location_icon {
     position: static; /* Reset position to flow within the container */
     margin: 0 auto 10px auto; /* Center icons with spacing below */
@@ -1119,24 +1117,23 @@ margin: auto; */
     text-align: center; /* Center-align text */
   }
 
-  /* Center the Buy Ticket button and the ticket input */
   .buy_ticket, .ticket_input {
     margin: 10px auto; /* Center and add spacing */
     width: 80%; /* Adjust to fit smaller screens */
   }
 
-  /* Stack flex items in .ticket_section vertically */
   .ticket_section {
     flex-direction: column;
-    gap: 20px; /* Add spacing between items */
+    gap: 20px;
     padding-bottom: 20px; /* Adjust padding */
+    padding-right: 0px;
   }
 
-  /* Adjust map container */
   .map_bierhuebeli {
-    width: 80%;
+    width: 90%;
     height: auto; /* Allow height to adjust based on content */
-    margin: 20px auto;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
 }
@@ -1381,8 +1378,6 @@ margin: auto; */
 
   }
 
-
-  /* event-view-seite */
   .info_text {
     width: 90%; /* Adjust width to fit smaller screens */
     margin: 20px auto; /* Center horizontally */
@@ -1390,14 +1385,12 @@ margin: auto; */
     position: static; /* Reset positioning */
   }
 
-  /* Stack .ticket_section and .map_bierhuebeli vertically */
   .ticket_section, .map_bierhuebeli {
     width: 90%; /* Adjust width for smaller screens */
     margin: 20px auto; /* Center horizontally with spacing */
     position: static; /* Reset positioning */
   }
 
-  /* Adjust the layout for all icons and text */
   .calendar_icon, .time_icon, .location_icon {
     position: static; /* Reset position to flow within the container */
     margin: 0 auto 10px auto; /* Center icons with spacing below */
@@ -1410,20 +1403,18 @@ margin: auto; */
     text-align: center; /* Center-align text */
   }
 
-  /* Center the Buy Ticket button and the ticket input */
   .buy_ticket, .ticket_input {
-    margin: 10px auto; /* Center and add spacing */
-    width: 90%; /* Adjust to fit smaller screens */
+    margin: 10px auto; 
+    margin-right: 10px auto;
+    width: 80%; /* Adjust to fit smaller screens */
   }
 
-  /* Stack flex items in .ticket_section vertically */
   .ticket_section {
     flex-direction: column;
     gap: 20px; /* Add spacing between items */
     padding-bottom: 20px; /* Adjust padding */
   }
 
-  /* Adjust map container */
   .map_bierhuebeli {
     width: 90%;
     height: auto; /* Allow height to adjust based on content */
@@ -1637,7 +1628,6 @@ margin: auto; */
     /* Passt den Zeilenabstand an */
   }
 
-
   .aboutus_header {
     font-size: 35px;
     /* Verkleinert die Schriftgröße für Smartphones */
@@ -1663,7 +1653,9 @@ margin: auto; */
     flex-direction: column; /* Stack sections vertically */
     align-items: center; /* Center align */
     gap: 25px; /* Add spacing between sections */
-    padding: 20px; /* More padding for larger screen */
+    /* padding: 20px; */
+    padding-right: 50px;
+    padding-top: 20px;
   }
 
   .info_text {
@@ -1688,7 +1680,7 @@ margin: auto; */
   .ticket_input {
     font-size: 16px; /* Maintain reasonable text size */
     padding: 10px; /* Comfortable padding */
-    width: 100%; /* Full width */
+    width: 90%; 
   }
 
   .map_bierhuebeli {
