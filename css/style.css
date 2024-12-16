@@ -196,7 +196,6 @@ footer {
 }
 
 .homepage_event_pics {
-  display: block;
   width: 200px;
   height: 150px;
   object-fit: cover;
@@ -206,7 +205,6 @@ footer {
   font-size: 30px;
   font-family: Monospace, Arial, Helvetica, sans-serif;
   text-align: center;
-  height: 15px;
 }
 
 .homepage_event_content {
@@ -242,6 +240,7 @@ footer {
   font-size: 20px;
   background-color: rgba(97, 24, 22, 0.73);
   border-radius: 5px;
+  width: 80%;
 }
 
 .homepage_grid_item:nth-child(1) {
@@ -271,11 +270,6 @@ footer {
   /* Each remaining item spans 1 column */
 }
 
-
-/* .homepage_grid_item:nth-child(7) {
-  display: hidden;
-} */
-
 .homepage_iframe_content {
   display: flex;
   justify-content: center;
@@ -290,22 +284,17 @@ footer {
 }
 
 .culture_video iframe {
-  /* align-content: center; */
   width: 700px;
   height: 400px;
   border: 0;
 }
 
 .map_area {
-  /* align-content: center;
-  padding: 10px 10px 10px 10px;
-  margin: auto; */
   padding: 10px;
   background-color: #E7E1D3;
 }
 
 .map_area iframe {
-  /* align-content: center; */
   width: 400px;
   height: 400px;
   border: 0;
@@ -963,7 +952,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 
   .all_event_container {
     margin: 0px 1px;
-    padding: 0;
   }
 
   .homepage_arrow_wheel {
@@ -972,119 +960,58 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   }
 
   .homepage_event_pics {
-    display: block;
     width: 100%;
     height: 250px;
-    object-fit: cover;
   }
 
   .homepage_grid_item_text {
     overflow-wrap: break-word;
     width: 80%;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    border-radius: 5px;
-  }
-
-  .homepage_grid_event_title {
-    font-size: 30px;
-    text-align: center;
-    height: 15px;
   }
 
   .homepage_event_content {
-    background-color: rgba(209, 39, 39, 0.354);
-    border-radius: 10px;
-    margin-top: 30px;
-    padding: 10px;
-    display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-columns: 0.5fr 3fr 3fr 3fr 3fr 0.5fr;
-    /* Define 6 equal columns */
-    grid-template-rows: 50px;
-    /* Define 2 rows */
-    gap: 10px;
-    /* Add spacing between grid items */
-    justify-items: center;
   }
 
-  .homepage_grid_item {
+  /* .homepage_grid_item {
     display: flex;
     align-items: center;
     position: relative;
     text-align: center;
-  }
+  } */
 
   .homepage_grid_item:nth-child(1) {
     grid-column: span 6;
     /* Span the first item across all 6 columns */
-    width: 100%;
-    height: 40px;
-    display: flex;
-    /* Use flexbox for centering */
-    justify-content: center;
-    /* Center horizontally */
-  }
-
-  .homepage_grid_item:nth-child(2) {
-    grid-column: span 1;
-    /* Each remaining item spans 1 column */
-  }
-
-  .homepage_grid_item:nth-child(n+3) {
-    grid-column: span 1;
-    /* Each remaining item spans 1 column */
   }
 
   .homepage_grid_item:nth-child(7) {
     display: none;
   }
 
-  /* Make 2 and 7 smaller */
-  .homepage_grid_item:nth-child(8) {
-    grid-column: span 1;
-    /* Each remaining item spans 1 column */
-  }
-
   .homepage_iframe_content {
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
   }
 
   .culture_video {
     padding: 5px;
-    background-color: #E7E1D3;
     width: 90%;
   }
 
   .culture_video iframe {
-    align-content: center;
     width: 100%;
     height: 500px;
-    border: 0;
   }
 
   .map_area {
-    /* align-content: center;
-padding: 10px 10px 10px 10px;
-margin: auto; */
     width: 90%;
-    padding: 10px;
-    background-color: #E7E1D3;
   }
 
   .map_area iframe {
     /* align-content: center; */
     width: 100%;
-    height: 400px;
-    border: 0;
   }
 
 
@@ -1250,132 +1177,28 @@ margin: auto; */
 
   /* Homepage */
 
-  .all_event_container {
-    margin: 0px 1px;
-    padding: 0;
-  }
-
   .homepage_arrow_wheel {
     height: 40px;
     width: 100%;
   }
 
-  .homepage_event_pics {
-    display: block;
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-  }
-
   .homepage_grid_item_text {
-    overflow-wrap: break-word;
-    width: 80%;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 20px;
-    border-radius: 5px;
-  }
-
-  .homepage_grid_event_title {
-    font-size: 30px;
-    text-align: center;
-    height: 15px;
+    font-size: 98%;
   }
 
   .homepage_event_content {
-    background-color: rgba(209, 39, 39, 0.354);
-    border-radius: 10px;
-    margin-top: 30px;
-    padding: 10px;
-    display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-columns: 0.5fr 3fr 3fr 3fr 0.5fr;
-    /* Define 6 equal columns */
-    grid-template-rows: 50px;
-    /* Define 2 rows */
-    gap: 10px;
-    /* Add spacing between grid items */
-    justify-items: center;
-  }
-
-  .homepage_grid_item {
-    display: flex;
-    align-items: center;
-    position: relative;
-    text-align: center;
   }
 
   .homepage_grid_item:nth-child(1) {
     grid-column: span 5;
     /* Span the first item across all 6 columns */
-    width: 100%;
-    height: 40px;
-    display: flex;
-    /* Use flexbox for centering */
-    justify-content: center;
-    /* Center horizontally */
-  }
-
-  .homepage_grid_item:nth-child(2) {
-    grid-column: span 1;
-    /* Each remaining item spans 1 column */
-  }
-
-  .homepage_grid_item:nth-child(n+3) {
-    grid-column: span 1;
-    /* Each remaining item spans 1 column */
   }
 
   .homepage_grid_item:nth-child(6),
   .homepage_grid_item:nth-child(7) {
     display: none;
-  }
-
-  /* Make 2 and 7 smaller */
-  .homepage_grid_item:nth-child(8) {
-    grid-column: span 1;
-    /* Each remaining item spans 1 column */
-  }
-
-  .homepage_iframe_content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .culture_video {
-    padding: 5px;
-    background-color: #E7E1D3;
-    width: 90%;
-  }
-
-  .culture_video iframe {
-    align-content: center;
-    width: 100%;
-    height: 500px;
-    border: 0;
-  }
-
-  .map_area {
-    /* align-content: center;
-padding: 10px 10px 10px 10px;
-margin: auto; */
-    width: 90%;
-    padding: 10px;
-    background-color: #E7E1D3;
-  }
-
-  .map_area iframe {
-    /* align-content: center; */
-    width: 100%;
-    height: 400px;
-    border: 0;
   }
 
   /* Concert Page */
@@ -1640,133 +1463,51 @@ margin: auto; */
 
   /* Homepage */
 
-  .all_event_container {
+  /* .all_event_container {
     margin: 0px 1px;
-    padding: 0;
-  }
+  } */
 
   .homepage_arrow_wheel {
     height: 40px;
     width: 100%;
   }
 
-  .homepage_event_pics {
-    display: block;
+  /* .homepage_event_pics {
     width: 100%;
     height: 250px;
-    object-fit: cover;
-  }
+  } */
 
   .homepage_grid_item_text {
-    overflow-wrap: break-word;
-    width: 80%;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
     font-size: 95%;
-    background-color: rgba(0, 0, 0, 0.642);
-    border-radius: 5px;
   }
 
-  .homepage_grid_event_title {
-    font-size: 30px;
-    text-align: center;
-    height: 15px;
-  }
-
-  .homepage_event_content {
-    background-color: rgba(209, 39, 39, 0.354);
-    border-radius: 10px;
-    margin-top: 30px;
-    padding: 10px;
-    display: grid;
+  /* .homepage_event_content {
     grid-template-columns: repeat(5, 1fr);
     grid-template-columns: 0.5fr 3fr 3fr 3fr 0.5fr;
-    /* Define 6 equal columns */
-    grid-template-rows: 50px;
-    /* Define 2 rows */
-    gap: 10px;
-    /* Add spacing between grid items */
-    justify-items: center;
-  }
+  } */
 
-  .homepage_grid_item {
+  /* .homepage_grid_item {
     display: flex;
     align-items: center;
     position: relative;
     text-align: center;
-  }
+  } */
 
-  .homepage_grid_item:nth-child(1) {
+  /* .homepage_grid_item:nth-child(1) {
     grid-column: span 5;
-    /* Span the first item across all 6 columns */
-    width: 100%;
-    height: 40px;
-    display: flex;
-    /* Use flexbox for centering */
-    justify-content: center;
-    /* Center horizontally */
-  }
-
-  .homepage_grid_item:nth-child(2) {
-    grid-column: span 1;
-    /* Each remaining item spans 1 column */
-  }
-
-  .homepage_grid_item:nth-child(n+3) {
-    grid-column: span 1;
-    /* Each remaining item spans 1 column */
-  }
-
-  .homepage_grid_item:nth-child(6),
-  .homepage_grid_item:nth-child(7) {
-    display: none;
-  }
-
-  /* Make 2 and 7 smaller */
-  .homepage_grid_item:nth-child(8) {
-    grid-column: span 1;
-    /* Each remaining item spans 1 column */
-  }
-
-  .homepage_iframe_content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-  }
+    /* Span the first item across all 6 columns 
+  } */
 
   .culture_video {
-    padding: 5px;
-    background-color: #E7E1D3;
     width: 100%;
-  }
-
-  .culture_video iframe {
-    align-content: center;
-    width: 100%;
-    height: 200px;
-    border: 0;
   }
 
   .map_area {
-    /* align-content: center;
-  padding: 10px 10px 10px 10px;
-  margin: auto; */
     width: 100%;
-    padding: 10px;
-    background-color: #E7E1D3;
   }
 
   .map_area iframe {
-    /* align-content: center; */
-    width: 100%;
     height: 300px;
-    border: 0;
   }
 
   /* Concert Page */
