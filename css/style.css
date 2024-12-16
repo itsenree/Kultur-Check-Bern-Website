@@ -348,20 +348,18 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 }
 
 /* Über Uns */
-/* event seite */
+/* event-seite */
 
 .click_here_rts {
   text-decoration: underline;
-  text-align: justify;
-  font-family: Monospace, Arial, Helvetica, sans-serif;
+  font-family: Monospace;
   font-size: large;
+  text-align: left;
 }
 
 .event_info {
   display: flex;
   justify-content: center;
-  /* align-items: center;
-  /* height: 100%; */
   margin-left: 40px;
   align-items: start;
   text-align: center;
@@ -371,18 +369,17 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   display: flex;
   height: 100%;
   width: 100%;
-  margin: 0 auto;
   border-radius: 5px;
   box-shadow: 1px 1px 15px 8px rgb(253, 240, 213);
 }
 
 .text_all_rts h1 {
   text-align: center;
-  font-family: Monospace, Arial, Helvetica, sans-serif;
+  font-family: Monospace;
 }
 
 .text_all_rts h3 {
-  font-family: Monospace, Arial, Helvetica, sans-serif;
+  font-family: Monospace;
 }
 
 .heart_empty {
@@ -404,7 +401,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 .info_text {
   background-color: rgba(155, 41, 39, 0.5);
   position: relative;
-  /* height: 100%; */
   width: 500px;
   padding: 50px;
   padding-bottom: auto;
@@ -423,10 +419,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   text-align: justify;
 }
 
-/* .info_text, .ticket_section{
-  position: relative;
-} */
-
 .ticket_section {
   background-color: rgba(194, 193, 193, 0.354);
   box-shadow: 1px 1px 15px 8px hsla(0, 1%, 45%, 0.54);
@@ -437,7 +429,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   margin-top: 40px;
   border-radius: 5px;
   display: flex;
-  gap: auto;
   position: relative;
 }
 
@@ -525,13 +516,12 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   display:center;
   width:100%;
   padding: 10px 60px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial;
   font-size: 18px;
   text-align: center;
   cursor: pointer;
   background-color: rgba(155, 41, 39, 0.75);
-  /* Green button */
-  color: white;
+  color: rgb(253, 240, 213);
   border: none;
   border-radius: 5px;
   box-shadow: 1px 1px 10px 5px rgb(159, 86, 85);
@@ -541,32 +531,12 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   background-color: #9b2927;
 }
 
-.ticket_input {
-  display: flex;
-  padding: 10px;
-  margin-left: 0px;
-  font-size: 18px;
-  width:100%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(155, 41, 39, 0.448);
-}
-
-.ticket_input:focus {
-  outline: none;
-  border-color: rgb(155, 41, 39);
-  /* Blue outline on focus */
-  box-shadow: 0 0 5px rgb(155, 41, 39);
-}
-
 .map_bierhuebeli {
   margin-top: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: rgba(194, 193, 193, 0.354);
   box-shadow: 1px 1px 15px 8px hsla(0, 1%, 45%, 0.54);
-  width: 100%;
-  height: 100%;
   border-radius: 5px;
 }
 
@@ -937,52 +907,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   }
 
 
-  /* event-view-seite */
-
-  .info_text {
-    width: 80%;
-    margin: 20px auto; 
-    order: -1; /* Moves .info_text to the top of the flex container */
-    position: static; /* Reset positioning */
-  }
-
-  .ticket_section, .map_bierhuebeli {
-    width: 90%; /* Adjust width for larger screens */
-    margin: 20px auto; /* Center horizontally with spacing */
-    position: static; /* Reset positioning */
-  }
-
-  .calendar_icon, .time_icon, .location_icon {
-    position: static; /* Reset position to flow within the container */
-    margin: 0 auto 10px auto; /* Center icons with spacing below */
-    display: block; /* Stack the icon and text */
-  }
-
-  .event_date, .event_time, .bierhuebeli_address {
-    position: static; /* Reset absolute positioning */
-    margin: 0 auto; /* Center text */
-    text-align: center; /* Center-align text */
-  }
-
-  .buy_ticket, .ticket_input {
-    margin: 10px auto; /* Center and add spacing */
-    width: 80%; /* Adjust to fit smaller screens */
-  }
-
-  .ticket_section {
-    flex-direction: column;
-    gap: 20px;
-    padding-bottom: 20px; /* Adjust padding */
-    padding-right: 0px;
-  }
-
-  .map_bierhuebeli {
-    width: 90%;
-    height: auto; /* Allow height to adjust based on content */
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
   /*startpage*/
 
   .startpage_body {
@@ -1189,22 +1113,27 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
     margin-top: 20px;
   }
 
+  /* event-view-seite */
+
   .info_text {
-    width: 90%; /* Adjust width to fit smaller screens */
-    margin: 20px auto; /* Center horizontally */
-    order: -1; /* Moves .info_text to the top of the flex container */
-    position: static; /* Reset positioning */
+    width: 50%; /* Make the .info_text container more flexible */
+    position: static;
+    order: -1; /* Ensure it is placed above all other elements */
   }
 
-  .ticket_section, .map_bierhuebeli {
-    width: 90%; /* Adjust width for smaller screens */
-    margin: 20px auto; /* Center horizontally with spacing */
-    position: static; /* Reset positioning */
+  .ticket_section, .map_bierhuebeli{
+    width: 80%; /* Adjust width for smaller screens */
+    height: auto;
+    margin-top: 40px; /* Center horizontally with spacing */
+    margin-left: 0;
+    margin-right: 40px;
+    padding: 20px;
+    position: static; 
   }
 
   .calendar_icon, .time_icon, .location_icon {
     position: static; /* Reset position to flow within the container */
-    margin: 0 auto 10px auto; /* Center icons with spacing below */
+    margin: 0 auto; /* Center icons with spacing below */
     display: block; /* Stack the icon and text */
   }
 
@@ -1214,22 +1143,28 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
     text-align: center; /* Center-align text */
   }
 
-  .buy_ticket, .ticket_input {
-    margin: 10px auto; 
-    margin-right: 10px auto;
-    width: 80%; /* Adjust to fit smaller screens */
+  .buy_ticket {
+    margin-top: 20px;
+    margin-bottom: 10px; 
+    width: 90%; /* Adjust to fit smaller screens */
   }
 
   .ticket_section {
     flex-direction: column;
     gap: 20px; /* Add spacing between items */
+    padding-right: 0;
     padding-bottom: 20px; /* Adjust padding */
   }
 
-  .map_bierhuebeli {
-    width: 90%;
-    height: auto; /* Allow height to adjust based on content */
-    margin: 20px auto;
+  .map_bierhuebeli{
+    margin-top: 30px;
+    width: 80%;
+    padding-right: 0;
+  }
+
+  .map_bierhuebeli iframe{
+    width: 80%;
+    height: auto;
   }
 
   /*startpage*/
@@ -1468,12 +1403,11 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
     /* Setzt die maximale Breite des Bildes */
   }
 
-  /* event-view-page */
+  /* event-view-seite */
   .event_info {
     flex-direction: column; /* Stack sections vertically */
     align-items: center; /* Center align */
     gap: 25px; /* Add spacing between sections */
-    /* padding: 20px; */
     padding-right: 50px;
     padding-top: 20px;
   }
@@ -1494,19 +1428,16 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 
   .buy_ticket {
     font-size: 18px; /* Slightly larger text size */
-    padding: 10px 25px; /* Larger button */
-  }
-
-  .ticket_input {
-    font-size: 16px; /* Maintain reasonable text size */
-    padding: 10px; /* Comfortable padding */
-    width: 90%; 
+    padding: 10px 30px; /* Larger button */
+    margin-left: 10px;
+    margin-top: 10px;
   }
 
   .map_bierhuebeli {
     width: 90%; 
-    margin: 0 auto; /* Center align */
+    margin: 10; /* Center align */
     padding: 15px; /* Comfortable padding */
+    margin-bottom: 20px;
   }
 
   .map_bierhuebeli iframe {
