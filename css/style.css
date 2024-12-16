@@ -36,13 +36,8 @@ main {
   height: 70px;
 }
 
-.profile_icon {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  height: 40px;
 
-}
+/* Navbar */
 
 .navbar {
   display: flex;
@@ -53,7 +48,6 @@ main {
   margin: 0px;
   padding: 13px;
   background-color: rgba(155, 41, 39, 0.2);
-  border-radius: 0px;
   list-style: none;
 }
 
@@ -62,9 +56,7 @@ main {
 .navbar li a {
   font-family: Monospace, Arial, Helvetica, sans-serif;
   font-size: 23px;
-  color: black;
-  /* folgendes -> macht damit die abstände gleichmässig auch bei veränderungen der Seite */
-  box-sizing: border-box;
+  color: black; 
   padding: 10px 15px 0px 15px;
 }
 
@@ -72,8 +64,7 @@ main {
   color: var(--darkred) !important;
 }
 
-.navbar div:hover .dropbtn,
-.navbar div:focus-within .dropbtn {
+.navbar:hover .dropbtn {
   color: var(--darkred);
   border-bottom-style: solid;
   border-bottom-color: var(--darkred);
@@ -87,58 +78,39 @@ main {
 
 /* Navbar Dropdown */
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
 .dropdown .dropbtn {
   font-family: Monospace, Arial, Helvetica, sans-serif;
   font-size: 23px;
-  color: black;
-  /* folgendes -> macht damit die abstände gleichmässig auch bei veränderungen der Seite */
-  box-sizing: border-box;
   padding: 0px 15px 0px 15px;
   border: none;
-  outline: none;
   background-color: inherit;
 }
 
 .dropdown .active_btn {
   font-family: Monospace, Arial, Helvetica, sans-serif;
   font-size: 23px;
-  color: var(--darkred);
   border-bottom-style: solid;
   border-bottom-color: var(--darkred);
-  /* folgendes -> macht damit die abstände gleichmässig auch bei veränderungen der Seite */
-  box-sizing: border-box;
   padding: 0px 15px 0px 15px;
   border: none;
-  outline: none;
   background-color: inherit;
 }
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: absolute; /* nav würde so lang werden wie dropdown */
   background-color: #E7E1D3;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 1; /* dropdown wird über inhalt angezeigt */
   border-radius: 5px;
 }
 
 .dropdown-content a {
-  float: none;
-  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
-}
 
-.dropdown-content .active_dropdown {
-  color: var(--darkred);
 }
 
 .dropdown-content a:hover {
@@ -153,12 +125,8 @@ main {
 /* Footer Design */
 
 footer {
-  /* width: 100%; */
   background-color: rgb(159, 86, 85);
-  text-align: center;
   padding: 10px;
-  margin-top: 0;
-  /* -> left/right/bottom 0 macht beide alle seiten gleichmässig */
 }
 
 .logo_footer {
@@ -179,7 +147,6 @@ footer {
 }
 
 .rights {
-  display: block;
   text-align: center;
   font-size: 13px;
 }
@@ -311,23 +278,19 @@ footer {
   border: 0;
 }
 
-/* Startpage */
+/* intrests */
 
 .startpage_body {
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgba(155, 41, 39, 0.5);
   /* Rosa Hintergrund */
-  display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .startpage_selectable_button {
   padding: 10px 20px;
   margin: 5px;
-  border: none;
   border-radius: 5px;
   color: rgb(253, 240, 213);
   background-color:rgba(155, 41, 39, 0.7);
@@ -353,8 +316,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 .startpage_buttons_container {
   margin-top: 20px;
   /* Abstand zwischen Titel und Buttons */
-  text-align: center;
-  /* Zentriert die Buttons */
 }
 
 .startpage_container {
@@ -390,7 +351,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   font-size: 25px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .cta-button:hover {
@@ -636,7 +596,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   align-items: center;
   padding: 10px;
   position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
 }
@@ -868,22 +827,15 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   max-width: 450px;
 }
 
+/* Profile icon und sidebar */
 
 .profile_icon {
-  /* position: fixed; */
-  right: 0;
-  top: 20px;
   right: 10px;
-  width: 40px;
-  height: 40px;
   cursor: pointer;
-  z-index: 1000;
-  padding-bottom: 15px;
-}
-
-.profile-container {
-  /* position: relative; */
-  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 40px;
 }
 
 .sidebar {
@@ -895,7 +847,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   width: 150px;
   /* Passen Sie die Breite der Sidebar an */
   background-color: rgb(159, 86, 85);
-  z-index: 1000;
 }
 
 .profile-container:hover .sidebar {
@@ -909,15 +860,12 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 }
 
 .sidebar_dropdown a {
-  color: black;
   padding: 10px 0;
   text-decoration: none;
-  display: block;
   margin-bottom: 10px;
 }
 
 .sidebar_dropdown a:hover {
-
   color: rgb(253, 240, 213);
 }
 
@@ -1183,7 +1131,7 @@ margin: auto; */
     width: 90%;
     max-width: 400px;
     font-size: 24px;
-    box-shadow: 0 0 15px rgb(253, 240, 213);
+  
   }
 
   .login_container h2 {
@@ -1229,6 +1177,10 @@ margin: auto; */
   .navbar {
     font-size: 15px;
     padding: 10px 15px 5px 15px;
+  }
+
+  .dropdown-content {
+    min-width: 120px;
   }
 
   /* Homepage */
@@ -1362,9 +1314,7 @@ margin: auto; */
   }
 
   /* Concert Page */
-  .grid_container_concert {
-    gap: 30px;
-  }
+
 
   .flexbox_item_concert {
     height: 220px;
@@ -1378,14 +1328,6 @@ margin: auto; */
   .flexbox_text_item_concert {
     height: 40%;
     font-size: 28px;
-  }
-
-  .concert_img1 {
-    width: 100%;
-    /* Passt die Breite des Bildes an die Breite der Kachel an */
-    height: 100%;
-    object-fit: cover;
-    /* Schneidet das Bild so zu, dass es die Kachel vollständig ausfüllt */
   }
 
   .topic_concert {
@@ -1557,7 +1499,7 @@ margin: auto; */
     width: 85%;
     max-width: 350px;
     font-size: 22px;
-    box-shadow: 0 0 10px rgb(253, 240, 213);
+  
   }
 
   .login_container h2 {
@@ -1611,6 +1553,11 @@ margin: auto; */
 
   .navbar {
     font-size: 25px;
+  }
+
+  .dropdown-content {
+    min-width: 100px;
+    font-size: 17px;
   }
 
   /* Homepage */
@@ -1745,12 +1692,9 @@ margin: auto; */
   }
 
   /* Concert Page */
-  .flexbox_container_concert {
-    gap: 20px;
-  }
 
   .flexbox_item_concert {
-    height: 300px;
+    height: 350px;
     width: 90%;
   }
 
@@ -1762,15 +1706,7 @@ margin: auto; */
     height: 20%;
     font-size: 30px;
   }
-
-  .concert_img1 {
-    width: 100%;
-    /* Passt die Breite des Bildes an die Breite der Kachel an */
-    height: 100%;
-    object-fit: cover;
-    /* Schneidet das Bild so zu, dass es die Kachel vollständig ausfüllt */
-  }
-
+ 
   .topic_concert {
     font-size: 65px;
   }
@@ -1913,13 +1849,12 @@ margin: auto; */
     font-size: 16px;
     padding: 5px 10px;
     margin-top: 8px;
-    box-shadow: 0px 0px 10px rgb(253, 240, 213);
+  
   }
 
   /*login page*/
 
   .body_login {
-    background-color: rgba(155, 41, 39, 0.5);
     flex-direction: column;
     height: auto;
     padding: 10px;
@@ -1948,7 +1883,6 @@ margin: auto; */
     width: 80%;
     max-width: 300px;
     font-size: 20px;
-    box-shadow: 0 0 8px rgb(253, 240, 213);
   }
 
   .login_container h2 {
