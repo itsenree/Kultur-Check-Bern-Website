@@ -718,11 +718,9 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 /* Grundstil */
 .filter {
   list-style: none;
-  display: flex;
-  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 10px;
-  position: relative;
   margin-top: 60px;
   margin-left: 20px;
 }
@@ -736,7 +734,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 
 .filter_dropdown {
   position: relative;
-  display: inline-block;
 }
 
 .filter_dropdown_main {
@@ -755,13 +752,12 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   display: none;
   /* Standardmäßig ausgeblendet */
   position: absolute;
-  background-color: white;
+  background-color: rgb(159, 86, 85);
   min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  /*z-index: 1;*/
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 .dropdown_content_filter li {
@@ -772,8 +768,12 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 .dropdown_content_filter li a {
   text-decoration: none;
   color: black;
-  display: block;
 }
+
+.dropdown_content_filter li a:hover {
+  color: rgb(253, 240, 213);
+}
+
 
 /* Dropdown bei Hover anzeigen */
 .filter_dropdown:hover .dropdown_content_filter {
@@ -785,20 +785,18 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 .flexbox_container_concert {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* nicht alle in einer Zeile */
   gap: 40px;
 }
 
 .flexbox_item_concert {
-  height: 200px;
+  height: 250px;
   width: 19%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .flexbox_item_concert a {
-  height: 75%;
+  height: 70%;
   width: 100%;
 }
 
@@ -806,12 +804,11 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   background-color: rgba(155, 41, 39, 0.2);
   font-size: 20px;
   font-family: Monospace, Arial, Helvetica, sans-serif;
-  display: flex;
+  display: flex; /* Schriftausrichtung innerhalb Box */
   justify-content: center;
   text-align: center;
   align-items: center;
-  width: 100%;
-  height: 25%;
+  height: 30%;
 }
 
 .concert_img1 {
@@ -820,8 +817,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   height: 100%;
   object-fit: cover;
   /* Schneidet das Bild so zu, dass es die Kachel vollständig ausfüllt */
-  object-position: center;
-  /* Positioniert das Bild mittig */
 }
 
 .concert_img1:hover {
@@ -831,9 +826,7 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 .topic_concert {
   font-family: Monospace, Arial, Helvetica, sans-serif;
   font-size: 50px;
-  margin-left: 10px;
   margin-top: 55px;
-  margin-bottom: 0px;
   text-align: center;
 }
 
@@ -1246,8 +1239,6 @@ margin: auto; */
 
 /* Tablet */
 
-/* Concert Page */
-
 @media (max-width:1024px) {
 
   /* Navbar */
@@ -1398,7 +1389,7 @@ margin: auto; */
   }
 
   .flexbox_item_concert a {
-    height: 70%;
+    height: 65%;
   }
 
   .flexbox_text_item_concert {
@@ -1626,12 +1617,19 @@ margin: auto; */
   .login_container .psw {
     margin-top: 15px;
   }
+
+   /*footer*/
+  
+  .footer_line {
+    font-size: 14px;
+  }
+  
+  .rights {
+    font-size: 11px;
+  }
 }
 
 /* Smartphone */
-
-
-/* Concert Page */
 
 @media (max-width:768px) {
 
@@ -1779,7 +1777,7 @@ margin: auto; */
 
   .flexbox_item_concert {
     height: 300px;
-    width: 100%;
+    width: 90%;
   }
 
   .flexbox_item_concert a {
@@ -1800,7 +1798,7 @@ margin: auto; */
   }
 
   .topic_concert {
-    font-size: 40px;
+    font-size: 65px;
   }
 
   .filter_dropdown_main {
@@ -2020,5 +2018,15 @@ margin: auto; */
 
   .login_container .psw {
     margin-top: 10px;
+  }
+
+  /*footer*/
+
+  .footer_line {
+    font-size: 12px;
+  }
+  
+  .rights {
+    font-size: 10px;
   }
 }
