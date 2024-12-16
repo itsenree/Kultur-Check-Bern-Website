@@ -792,10 +792,7 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 }
 
 .aboutus_text {
-  margin-bottom: 10px;
   color: var(--darkred);
-  font-size: 20px;
-  text-align: left;
   font-size: 20px;
 }
 
@@ -803,14 +800,11 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   margin-bottom: 5px;
   color: var(--darkred);
   font-size: 30px;
-  font-weight: bold;
-  text-align: left;
   font-family:Monospace, Arial, Helvetica, sans-serif;
 }
 
 .aboutus_wrapper {
   display: flex;
-  align-items: center;
   flex-direction: column;
   padding: 5px;
   max-width: 450px;
@@ -866,9 +860,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   /* Maximale Breite des Bildes */
   height: 100%;
   /* Beibehaltung des Seitenverhältnisses */
-  display: flex;
-  /* Entfernt den zusätzlichen Abstand unter dem Bild */
-  justify-content: end;
   border-radius: 20px;
   /* Optional: Rundet die Ecken des Bildes */
   object-fit: cover;
@@ -1174,18 +1165,13 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   /* About Us Page  */
 
   .about_us_container {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: auto;
-    padding: 20px;
     margin-bottom: 20px;
   }
 
   .aboutus_text {
-    margin-bottom: 10px;
-    font-size: 20px;
     text-align: center;
     line-height: 1.0;
   }
@@ -1201,16 +1187,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 
   .gruppen_bild {
     margin-top: 20px;
-    width: 100%;
-    /* Passt die Breite des Bildes an */
-    max-width: 450px;
-    /* Maximale Breite des Bildes */
-    height: auto;
-    /* Beibehaltung des Seitenverhältnisses */
-    border-radius: 20px;
-    /* Optional: Rundet die Ecken des Bildes */
-    object-fit: cover;
-
   }
 
   .info_text {
