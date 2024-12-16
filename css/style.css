@@ -36,13 +36,6 @@ main {
   height: 70px;
 }
 
-.profile_icon {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  height: 40px;
-
-}
 
 /* Navbar */
 
@@ -851,22 +844,15 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   /* Verkleinert die Breite des Textcontainers */
 }
 
+/* Profile icon und sidebar */
 
 .profile_icon {
-  /* position: fixed; */
-  right: 0;
-  top: 20px;
   right: 10px;
-  width: 40px;
-  height: 40px;
   cursor: pointer;
-  z-index: 1000;
-  padding-bottom: 15px;
-}
-
-.profile-container {
-  /* position: relative; */
-  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 40px;
 }
 
 .sidebar {
@@ -878,7 +864,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   width: 150px;
   /* Passen Sie die Breite der Sidebar an */
   background-color: rgb(159, 86, 85);
-  z-index: 1000;
 }
 
 .profile-container:hover .sidebar {
@@ -892,15 +877,12 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 }
 
 .sidebar_dropdown a {
-  color: black;
   padding: 10px 0;
   text-decoration: none;
-  display: block;
   margin-bottom: 10px;
 }
 
 .sidebar_dropdown a:hover {
-
   color: rgb(253, 240, 213);
 }
 
