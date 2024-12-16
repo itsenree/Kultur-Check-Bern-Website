@@ -36,13 +36,8 @@ main {
   height: 70px;
 }
 
-.profile_icon {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  height: 40px;
 
-}
+/* Navbar */
 
 .navbar {
   display: flex;
@@ -53,7 +48,6 @@ main {
   margin: 0px;
   padding: 13px;
   background-color: rgba(155, 41, 39, 0.2);
-  border-radius: 0px;
   list-style: none;
 }
 
@@ -62,9 +56,7 @@ main {
 .navbar li a {
   font-family: Monospace, Arial, Helvetica, sans-serif;
   font-size: 23px;
-  color: black;
-  /* folgendes -> macht damit die abstände gleichmässig auch bei veränderungen der Seite */
-  box-sizing: border-box;
+  color: black; 
   padding: 10px 15px 0px 15px;
 }
 
@@ -72,8 +64,7 @@ main {
   color: var(--darkred) !important;
 }
 
-.navbar div:hover .dropbtn,
-.navbar div:focus-within .dropbtn {
+.navbar:hover .dropbtn {
   color: var(--darkred);
   border-bottom-style: solid;
   border-bottom-color: var(--darkred);
@@ -87,58 +78,39 @@ main {
 
 /* Navbar Dropdown */
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
 .dropdown .dropbtn {
   font-family: Monospace, Arial, Helvetica, sans-serif;
   font-size: 23px;
-  color: black;
-  /* folgendes -> macht damit die abstände gleichmässig auch bei veränderungen der Seite */
-  box-sizing: border-box;
   padding: 0px 15px 0px 15px;
   border: none;
-  outline: none;
   background-color: inherit;
 }
 
 .dropdown .active_btn {
   font-family: Monospace, Arial, Helvetica, sans-serif;
   font-size: 23px;
-  color: var(--darkred);
   border-bottom-style: solid;
   border-bottom-color: var(--darkred);
-  /* folgendes -> macht damit die abstände gleichmässig auch bei veränderungen der Seite */
-  box-sizing: border-box;
   padding: 0px 15px 0px 15px;
   border: none;
-  outline: none;
   background-color: inherit;
 }
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: absolute; /* nav würde so lang werden wie dropdown */
   background-color: #E7E1D3;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 1; /* dropdown wird über inhalt angezeigt */
   border-radius: 5px;
 }
 
 .dropdown-content a {
-  float: none;
-  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
-}
 
-.dropdown-content .active_dropdown {
-  color: var(--darkred);
 }
 
 .dropdown-content a:hover {
@@ -153,12 +125,8 @@ main {
 /* Footer Design */
 
 footer {
-  /* width: 100%; */
   background-color: rgb(159, 86, 85);
-  text-align: center;
   padding: 10px;
-  margin-top: 0;
-  /* -> left/right/bottom 0 macht beide alle seiten gleichmässig */
 }
 
 .logo_footer {
@@ -179,7 +147,6 @@ footer {
 }
 
 .rights {
-  display: block;
   text-align: center;
   font-size: 13px;
 }
@@ -196,7 +163,6 @@ footer {
 }
 
 .homepage_event_pics {
-  display: block;
   width: 200px;
   height: 150px;
   object-fit: cover;
@@ -206,7 +172,6 @@ footer {
   font-size: 30px;
   font-family: Monospace, Arial, Helvetica, sans-serif;
   text-align: center;
-  height: 15px;
 }
 
 .homepage_event_content {
@@ -242,6 +207,7 @@ footer {
   font-size: 20px;
   background-color: rgba(97, 24, 22, 0.73);
   border-radius: 5px;
+  width: 80%;
 }
 
 .homepage_grid_item:nth-child(1) {
@@ -271,11 +237,6 @@ footer {
   /* Each remaining item spans 1 column */
 }
 
-
-/* .homepage_grid_item:nth-child(7) {
-  display: hidden;
-} */
-
 .homepage_iframe_content {
   display: flex;
   justify-content: center;
@@ -290,44 +251,35 @@ footer {
 }
 
 .culture_video iframe {
-  /* align-content: center; */
   width: 700px;
   height: 400px;
   border: 0;
 }
 
 .map_area {
-  /* align-content: center;
-  padding: 10px 10px 10px 10px;
-  margin: auto; */
   padding: 10px;
   background-color: #E7E1D3;
 }
 
 .map_area iframe {
-  /* align-content: center; */
   width: 400px;
   height: 400px;
   border: 0;
 }
 
-/* Startpage */
+/* intrests */
 
 .startpage_body {
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgba(155, 41, 39, 0.5);
   /* Rosa Hintergrund */
-  display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .startpage_selectable_button {
   padding: 10px 20px;
   margin: 5px;
-  border: none;
   border-radius: 5px;
   color: rgb(253, 240, 213);
   background-color:rgba(155, 41, 39, 0.7);
@@ -353,8 +305,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 .startpage_buttons_container {
   margin-top: 20px;
   /* Abstand zwischen Titel und Buttons */
-  text-align: center;
-  /* Zentriert die Buttons */
 }
 
 .startpage_container {
@@ -390,7 +340,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   font-size: 25px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .cta-button:hover {
@@ -606,7 +555,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   align-items: center;
   padding: 10px;
   position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
 }
@@ -806,32 +754,19 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 /* About Us */
 
 .about_us_container {
-  /* padding: 40px;
-  margin-right: 65px auto;
-  border-radius: 10px;
-  box-shadow: 0 0 30px rgb(253, 240, 213);
-  font-size: 20px;
-  text-align: left; */
   display: flex;
   justify-content: space-around;
   height: 450px;
   margin-bottom: 150px;
-  /* flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 40%;
-  max-width: 450px;
-  line-height: 1.2; */
+  padding: 20px;
 }
 
 .aboutus_text {
   margin-bottom: 10px;
   color: var(--darkred);
-  font-size: 0, 2 em;
+  font-size: 20px;
   text-align: left;
   font-size: 20px;
-  line-height: 1.6;
 }
 
 .aboutus_header {
@@ -845,32 +780,21 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 
 .aboutus_wrapper {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
-  /* width: 100%; */
-  padding: 10px;
+  padding: 5px;
   max-width: 450px;
-  width: 60%;
-  /* Verkleinert die Breite des Textcontainers */
 }
 
+/* Profile icon und sidebar */
 
 .profile_icon {
-  /* position: fixed; */
-  right: 0;
-  top: 20px;
   right: 10px;
-  width: 40px;
-  height: 40px;
   cursor: pointer;
-  z-index: 1000;
-  padding-bottom: 15px;
-}
-
-.profile-container {
-  /* position: relative; */
-  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 40px;
 }
 
 .sidebar {
@@ -882,7 +806,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   width: 150px;
   /* Passen Sie die Breite der Sidebar an */
   background-color: rgb(159, 86, 85);
-  z-index: 1000;
 }
 
 .profile-container:hover .sidebar {
@@ -896,20 +819,17 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 }
 
 .sidebar_dropdown a {
-  color: black;
   padding: 10px 0;
   text-decoration: none;
-  display: block;
   margin-bottom: 10px;
 }
 
 .sidebar_dropdown a:hover {
-
   color: rgb(253, 240, 213);
 }
 
 .gruppen_bild {
-  margin-top: 90px;
+  margin-top: 30px;
   width: 100%;
   /* Passt die Breite des Bildes an */
   max-width: 450px;
@@ -933,7 +853,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 
   .all_event_container {
     margin: 0px 1px;
-    padding: 0;
   }
 
   .homepage_arrow_wheel {
@@ -942,119 +861,58 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   }
 
   .homepage_event_pics {
-    display: block;
     width: 100%;
     height: 250px;
-    object-fit: cover;
   }
 
   .homepage_grid_item_text {
     overflow-wrap: break-word;
     width: 80%;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    border-radius: 5px;
-  }
-
-  .homepage_grid_event_title {
-    font-size: 30px;
-    text-align: center;
-    height: 15px;
   }
 
   .homepage_event_content {
-    background-color: rgba(209, 39, 39, 0.354);
-    border-radius: 10px;
-    margin-top: 30px;
-    padding: 10px;
-    display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-columns: 0.5fr 3fr 3fr 3fr 3fr 0.5fr;
-    /* Define 6 equal columns */
-    grid-template-rows: 50px;
-    /* Define 2 rows */
-    gap: 10px;
-    /* Add spacing between grid items */
-    justify-items: center;
   }
 
-  .homepage_grid_item {
+  /* .homepage_grid_item {
     display: flex;
     align-items: center;
     position: relative;
     text-align: center;
-  }
+  } */
 
   .homepage_grid_item:nth-child(1) {
     grid-column: span 6;
     /* Span the first item across all 6 columns */
-    width: 100%;
-    height: 40px;
-    display: flex;
-    /* Use flexbox for centering */
-    justify-content: center;
-    /* Center horizontally */
-  }
-
-  .homepage_grid_item:nth-child(2) {
-    grid-column: span 1;
-    /* Each remaining item spans 1 column */
-  }
-
-  .homepage_grid_item:nth-child(n+3) {
-    grid-column: span 1;
-    /* Each remaining item spans 1 column */
   }
 
   .homepage_grid_item:nth-child(7) {
     display: none;
   }
 
-  /* Make 2 and 7 smaller */
-  .homepage_grid_item:nth-child(8) {
-    grid-column: span 1;
-    /* Each remaining item spans 1 column */
-  }
-
   .homepage_iframe_content {
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
   }
 
   .culture_video {
     padding: 5px;
-    background-color: #E7E1D3;
     width: 90%;
   }
 
   .culture_video iframe {
-    align-content: center;
     width: 100%;
     height: 500px;
-    border: 0;
   }
 
   .map_area {
-    /* align-content: center;
-padding: 10px 10px 10px 10px;
-margin: auto; */
     width: 90%;
-    padding: 10px;
-    background-color: #E7E1D3;
   }
 
   .map_area iframe {
     /* align-content: center; */
     width: 100%;
-    height: 400px;
-    border: 0;
   }
 
 
@@ -1124,7 +982,7 @@ margin: auto; */
     width: 90%;
     max-width: 400px;
     font-size: 24px;
-    box-shadow: 0 0 15px rgb(253, 240, 213);
+  
   }
 
   .login_container h2 {
@@ -1172,85 +1030,29 @@ margin: auto; */
     padding: 10px 15px 5px 15px;
   }
 
-  /* Homepage */
-
-  .all_event_container {
-    margin: 0px 1px;
-    padding: 0;
+  .dropdown-content {
+    min-width: 120px;
   }
+
+  /* Homepage */
 
   .homepage_arrow_wheel {
     height: 40px;
     width: 100%;
   }
 
-  .homepage_event_pics {
-    display: block;
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-  }
-
   .homepage_grid_item_text {
-    overflow-wrap: break-word;
-    width: 80%;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 20px;
-    border-radius: 5px;
-  }
-
-  .homepage_grid_event_title {
-    font-size: 30px;
-    text-align: center;
-    height: 15px;
+    font-size: 98%;
   }
 
   .homepage_event_content {
-    background-color: rgba(209, 39, 39, 0.354);
-    border-radius: 10px;
-    margin-top: 30px;
-    padding: 10px;
-    display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-columns: 0.5fr 3fr 3fr 3fr 0.5fr;
-    /* Define 6 equal columns */
-    grid-template-rows: 50px;
-    /* Define 2 rows */
-    gap: 10px;
-    /* Add spacing between grid items */
-    justify-items: center;
-  }
-
-  .homepage_grid_item {
-    display: flex;
-    align-items: center;
-    position: relative;
-    text-align: center;
   }
 
   .homepage_grid_item:nth-child(1) {
     grid-column: span 5;
     /* Span the first item across all 6 columns */
-    width: 100%;
-    height: 40px;
-    display: flex;
-    /* Use flexbox for centering */
-    justify-content: center;
-    /* Center horizontally */
-  }
-
-  .homepage_grid_item:nth-child(2) {
-    grid-column: span 1;
-    /* Each remaining item spans 1 column */
-  }
-
-  .homepage_grid_item:nth-child(n+3) {
-    grid-column: span 1;
-    /* Each remaining item spans 1 column */
   }
 
   .homepage_grid_item:nth-child(6),
@@ -1258,54 +1060,8 @@ margin: auto; */
     display: none;
   }
 
-  /* Make 2 and 7 smaller */
-  .homepage_grid_item:nth-child(8) {
-    grid-column: span 1;
-    /* Each remaining item spans 1 column */
-  }
-
-  .homepage_iframe_content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .culture_video {
-    padding: 5px;
-    background-color: #E7E1D3;
-    width: 90%;
-  }
-
-  .culture_video iframe {
-    align-content: center;
-    width: 100%;
-    height: 500px;
-    border: 0;
-  }
-
-  .map_area {
-    /* align-content: center;
-padding: 10px 10px 10px 10px;
-margin: auto; */
-    width: 90%;
-    padding: 10px;
-    background-color: #E7E1D3;
-  }
-
-  .map_area iframe {
-    /* align-content: center; */
-    width: 100%;
-    height: 400px;
-    border: 0;
-  }
-
   /* Concert Page */
-  .grid_container_concert {
-    gap: 30px;
-  }
+
 
   .flexbox_item_concert {
     height: 220px;
@@ -1319,14 +1075,6 @@ margin: auto; */
   .flexbox_text_item_concert {
     height: 40%;
     font-size: 28px;
-  }
-
-  .concert_img1 {
-    width: 100%;
-    /* Passt die Breite des Bildes an die Breite der Kachel an */
-    height: 100%;
-    object-fit: cover;
-    /* Schneidet das Bild so zu, dass es die Kachel vollständig ausfüllt */
   }
 
   .topic_concert {
@@ -1367,20 +1115,12 @@ margin: auto; */
   }
 
   .aboutus_header {
-    margin-bottom: 5px;
-    font-size: 30px;
-    font-weight: bold;
     text-align: center;
   }
 
   .aboutus_wrapper {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     padding: 10px;
     max-width: 600px;
-    width: 100%;
-    /* Verkleinert die Breite des Textcontainers */
   }
 
   .gruppen_bild {
@@ -1517,7 +1257,7 @@ margin: auto; */
     width: 85%;
     max-width: 350px;
     font-size: 22px;
-    box-shadow: 0 0 10px rgb(253, 240, 213);
+  
   }
 
   .login_container h2 {
@@ -1573,144 +1313,64 @@ margin: auto; */
     font-size: 25px;
   }
 
+  .dropdown-content {
+    min-width: 100px;
+    font-size: 17px;
+  }
+
   /* Homepage */
 
-  .all_event_container {
+  /* .all_event_container {
     margin: 0px 1px;
-    padding: 0;
-  }
+  } */
 
   .homepage_arrow_wheel {
     height: 40px;
     width: 100%;
   }
 
-  .homepage_event_pics {
-    display: block;
+  /* .homepage_event_pics {
     width: 100%;
     height: 250px;
-    object-fit: cover;
-  }
+  } */
 
   .homepage_grid_item_text {
-    overflow-wrap: break-word;
-    width: 80%;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
     font-size: 95%;
-    background-color: rgba(0, 0, 0, 0.642);
-    border-radius: 5px;
   }
 
-  .homepage_grid_event_title {
-    font-size: 30px;
-    text-align: center;
-    height: 15px;
-  }
-
-  .homepage_event_content {
-    background-color: rgba(209, 39, 39, 0.354);
-    border-radius: 10px;
-    margin-top: 30px;
-    padding: 10px;
-    display: grid;
+  /* .homepage_event_content {
     grid-template-columns: repeat(5, 1fr);
     grid-template-columns: 0.5fr 3fr 3fr 3fr 0.5fr;
-    /* Define 6 equal columns */
-    grid-template-rows: 50px;
-    /* Define 2 rows */
-    gap: 10px;
-    /* Add spacing between grid items */
-    justify-items: center;
-  }
+  } */
 
-  .homepage_grid_item {
+  /* .homepage_grid_item {
     display: flex;
     align-items: center;
     position: relative;
     text-align: center;
-  }
+  } */
 
-  .homepage_grid_item:nth-child(1) {
+  /* .homepage_grid_item:nth-child(1) {
     grid-column: span 5;
-    /* Span the first item across all 6 columns */
-    width: 100%;
-    height: 40px;
-    display: flex;
-    /* Use flexbox for centering */
-    justify-content: center;
-    /* Center horizontally */
-  }
-
-  .homepage_grid_item:nth-child(2) {
-    grid-column: span 1;
-    /* Each remaining item spans 1 column */
-  }
-
-  .homepage_grid_item:nth-child(n+3) {
-    grid-column: span 1;
-    /* Each remaining item spans 1 column */
-  }
-
-  .homepage_grid_item:nth-child(6),
-  .homepage_grid_item:nth-child(7) {
-    display: none;
-  }
-
-  /* Make 2 and 7 smaller */
-  .homepage_grid_item:nth-child(8) {
-    grid-column: span 1;
-    /* Each remaining item spans 1 column */
-  }
-
-  .homepage_iframe_content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-  }
+    /* Span the first item across all 6 columns 
+  } */
 
   .culture_video {
-    padding: 5px;
-    background-color: #E7E1D3;
     width: 100%;
-  }
-
-  .culture_video iframe {
-    align-content: center;
-    width: 100%;
-    height: 200px;
-    border: 0;
   }
 
   .map_area {
-    /* align-content: center;
-  padding: 10px 10px 10px 10px;
-  margin: auto; */
     width: 100%;
-    padding: 10px;
-    background-color: #E7E1D3;
   }
 
   .map_area iframe {
-    /* align-content: center; */
-    width: 100%;
     height: 300px;
-    border: 0;
   }
 
   /* Concert Page */
-  .flexbox_container_concert {
-    gap: 20px;
-  }
 
   .flexbox_item_concert {
-    height: 300px;
+    height: 350px;
     width: 90%;
   }
 
@@ -1722,15 +1382,7 @@ margin: auto; */
     height: 20%;
     font-size: 30px;
   }
-
-  .concert_img1 {
-    width: 100%;
-    /* Passt die Breite des Bildes an die Breite der Kachel an */
-    height: 100%;
-    object-fit: cover;
-    /* Schneidet das Bild so zu, dass es die Kachel vollständig ausfüllt */
-  }
-
+ 
   .topic_concert {
     font-size: 65px;
   }
@@ -1752,18 +1404,12 @@ margin: auto; */
   /* About Us Page  */
 
   .about_us_container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 10px;
-
   }
 
   .aboutus_text {
     font-size: 28px;
     /* Verkleinert die Schriftgröße für Smartphones */
-    line-height: 1.0;
-    /* Passt den Zeilenabstand an */
   }
 
   .aboutus_header {
@@ -1772,18 +1418,13 @@ margin: auto; */
   }
 
   .aboutus_wrapper {
-    width: 90%;
     max-width: 90%;
     /* Setzt die maximale Breite des Textcontainers */
-    padding: 10px;
   }
 
   .gruppen_bild {
-    margin-top: 20px;
-    width: 100%;
     max-width: 550px;
     /* Setzt die maximale Breite des Bildes */
-    height: auto;
   }
 
   /* event-view-seite */
@@ -1880,13 +1521,12 @@ margin: auto; */
     font-size: 16px;
     padding: 5px 10px;
     margin-top: 8px;
-    box-shadow: 0px 0px 10px rgb(253, 240, 213);
+  
   }
 
   /*login page*/
 
   .body_login {
-    background-color: rgba(155, 41, 39, 0.5);
     flex-direction: column;
     height: auto;
     padding: 10px;
@@ -1915,7 +1555,6 @@ margin: auto; */
     width: 80%;
     max-width: 300px;
     font-size: 20px;
-    box-shadow: 0 0 8px rgb(253, 240, 213);
   }
 
   .login_container h2 {
