@@ -311,23 +311,19 @@ footer {
   border: 0;
 }
 
-/* Startpage */
+/* intrests */
 
 .startpage_body {
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgba(155, 41, 39, 0.5);
   /* Rosa Hintergrund */
-  display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .startpage_selectable_button {
   padding: 10px 20px;
   margin: 5px;
-  border: none;
   border-radius: 5px;
   color: rgb(253, 240, 213);
   background-color:rgba(155, 41, 39, 0.7);
@@ -353,8 +349,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 .startpage_buttons_container {
   margin-top: 20px;
   /* Abstand zwischen Titel und Buttons */
-  text-align: center;
-  /* Zentriert die Buttons */
 }
 
 .startpage_container {
@@ -390,7 +384,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   font-size: 25px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .cta-button:hover {
