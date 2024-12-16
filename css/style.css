@@ -106,7 +106,7 @@ main {
 
 .dropdown .active_btn {
   font-family: Monospace, Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 23px;
   color: var(--darkred);
   border-bottom-style: solid;
   border-bottom-color: var(--darkred);
@@ -204,7 +204,7 @@ footer {
 
 .homepage_grid_event_title {
   font-size: 30px;
-  font-family: monospace;
+  font-family: Monospace, Arial, Helvetica, sans-serif;
   text-align: center;
   height: 15px;
 }
@@ -233,12 +233,14 @@ footer {
 
 .homepage_grid_item_text {
   position: absolute;
+  font-family: Monospace, Arial, Helvetica, sans-serif;
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 20px;
-  background-color: rgba(0, 0, 0, 0.642);
+  font-size: 20px;
+  background-color: rgba(97, 24, 22, 0.73);
   border-radius: 5px;
 }
 
@@ -313,7 +315,7 @@ footer {
 
 .startpage_body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: rgba(155, 41, 39, 0.5);
   /* Rosa Hintergrund */
   display: flex;
@@ -328,7 +330,7 @@ footer {
   border: none;
   border-radius: 5px;
   color: rgb(253, 240, 213);
-  background-color: #8C4F4F;
+  background-color:rgba(155, 41, 39, 0.7);
   cursor: pointer;
   display: inline-block;
 }
@@ -343,7 +345,8 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked+.startpage_selectable_button {
-  box-shadow: 0 0 30px rgb(254, 237, 203);
+  box-shadow: 0 0 40px rgb(254, 237, 203);
+  background-color: #733333;
   /* Box shadow when selected */
 }
 
@@ -378,7 +381,7 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 }
 
 .cta-button {
-  background-color: #8C4F4F;
+  background-color:#723838;
   /* Knopfhintergrundfarbe */
   color: rgb(253, 240, 213);
   border: none;
@@ -387,7 +390,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   font-size: 25px;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0px 0px 30px rgb(253, 240, 213);
   transition: background-color 0.3s;
 }
 
@@ -402,7 +404,7 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 .click_here_rts {
   text-decoration: underline;
   text-align: justify;
-  font-family: Arial;
+  font-family: Monospace, Arial, Helvetica, sans-serif;
   font-size: large;
 }
 
@@ -427,6 +429,11 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 
 .text_all_rts h1 {
   text-align: center;
+  font-family: Monospace, Arial, Helvetica, sans-serif;
+}
+
+.text_all_rts h3 {
+  font-family: Monospace, Arial, Helvetica, sans-serif;
 }
 
 .heart_empty {
@@ -696,15 +703,11 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 .login_container button {
   width: 100%;
   padding: 10px;
-  background-color: rgba(155, 41, 39, 0.5);
+  background-color: #723838;
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.login_container button:hover {
-  background-color: rgba(155, 41, 39, 0.5);
 }
 
 .login_container .psw {
@@ -853,7 +856,7 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 
 .aboutus_text {
   margin-bottom: 10px;
-  color: rgba(155, 41, 39, 0.5);
+  color: var(--darkred);
   font-size: 0, 2 em;
   text-align: left;
   font-size: 20px;
@@ -862,10 +865,11 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 
 .aboutus_header {
   margin-bottom: 5px;
-  color: rgba(155, 41, 39, 0.5);
+  color: var(--darkred);
   font-size: 30px;
   font-weight: bold;
   text-align: left;
+  font-family:Monospace, Arial, Helvetica, sans-serif;
 }
 
 .aboutus_wrapper {
@@ -876,7 +880,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   /* width: 100%; */
   padding: 10px;
   max-width: 450px;
-  justify-content: start;
   width: 60%;
   /* Verkleinert die Breite des Textcontainers */
 }
@@ -935,7 +938,7 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 }
 
 .gruppen_bild {
-  margin-top: 40px;
+  margin-top: 90px;
   width: 100%;
   /* Passt die Breite des Bildes an */
   max-width: 450px;
@@ -982,8 +985,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.642);
     border-radius: 5px;
   }
 
@@ -1164,13 +1165,12 @@ margin: auto; */
     font-size: 20px;
     padding: 8px 15px;
     margin-top: 15px;
-    box-shadow: 0px 0px 20px rgb(253, 240, 213);
   }
 
   /*login page*/
 
   .body_login {
-    background-color: rgba(155, 41, 39, 0.5);
+    /* background-color: rgba(155, 41, 39, 0.5); */
     flex-direction: column;
     height: auto;
     padding: 20px;
@@ -1244,7 +1244,7 @@ margin: auto; */
   /* Navbar */
   .navbar {
     font-size: 15px;
-    padding: 5px 10px 0px 10px;
+    padding: 10px 15px 5px 15px;
   }
 
   /* Homepage */
@@ -1275,7 +1275,6 @@ margin: auto; */
     transform: translate(-50%, -50%);
     color: white;
     font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.642);
     border-radius: 5px;
   }
 
@@ -1548,13 +1547,12 @@ margin: auto; */
     font-size: 18px;
     padding: 6px 12px;
     margin-top: 10px;
-    box-shadow: 0px 0px 15px rgb(253, 240, 213);
+  
   }
 
   /*login page*/
 
   .body_login {
-    background-color: rgba(155, 41, 39, 0.5);
     flex-direction: column;
     height: auto;
     padding: 15px;
@@ -1938,8 +1936,8 @@ margin: auto; */
   }
 
   .startpage_selectable_button {
-    padding: 5px 10px;
-    font-size: 10px;
+    padding: 10px 15px;
+    font-size: 15px;
   }
 
   .startpage_buttons_container {
