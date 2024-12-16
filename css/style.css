@@ -285,23 +285,19 @@ footer {
   border: 0;
 }
 
-/* Startpage */
+/* intrests */
 
 .startpage_body {
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgba(155, 41, 39, 0.5);
   /* Rosa Hintergrund */
-  display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .startpage_selectable_button {
   padding: 10px 20px;
   margin: 5px;
-  border: none;
   border-radius: 5px;
   color: rgb(253, 240, 213);
   background-color:rgba(155, 41, 39, 0.7);
@@ -327,8 +323,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 .startpage_buttons_container {
   margin-top: 20px;
   /* Abstand zwischen Titel und Buttons */
-  text-align: center;
-  /* Zentriert die Buttons */
 }
 
 .startpage_container {
@@ -364,7 +358,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   font-size: 25px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .cta-button:hover {
@@ -610,7 +603,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   align-items: center;
   padding: 10px;
   position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
 }
@@ -1174,7 +1166,7 @@ margin: auto; */
     width: 90%;
     max-width: 400px;
     font-size: 24px;
-    box-shadow: 0 0 15px rgb(253, 240, 213);
+  
   }
 
   .login_container h2 {
@@ -1550,7 +1542,7 @@ margin: auto; */
     width: 85%;
     max-width: 350px;
     font-size: 22px;
-    box-shadow: 0 0 10px rgb(253, 240, 213);
+  
   }
 
   .login_container h2 {
@@ -1911,13 +1903,12 @@ margin: auto; */
     font-size: 16px;
     padding: 5px 10px;
     margin-top: 8px;
-    box-shadow: 0px 0px 10px rgb(253, 240, 213);
+  
   }
 
   /*login page*/
 
   .body_login {
-    background-color: rgba(155, 41, 39, 0.5);
     flex-direction: column;
     height: auto;
     padding: 10px;
@@ -1946,7 +1937,6 @@ margin: auto; */
     width: 80%;
     max-width: 300px;
     font-size: 20px;
-    box-shadow: 0 0 8px rgb(253, 240, 213);
   }
 
   .login_container h2 {
