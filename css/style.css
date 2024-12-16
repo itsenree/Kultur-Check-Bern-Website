@@ -629,7 +629,6 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   align-items: center;
   padding: 10px;
   position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
 }
@@ -1193,7 +1192,7 @@ margin: auto; */
     width: 90%;
     max-width: 400px;
     font-size: 24px;
-    box-shadow: 0 0 15px rgb(253, 240, 213);
+  
   }
 
   .login_container h2 {
@@ -1575,7 +1574,7 @@ margin: auto; */
     width: 85%;
     max-width: 350px;
     font-size: 22px;
-    box-shadow: 0 0 10px rgb(253, 240, 213);
+  
   }
 
   .login_container h2 {
@@ -1942,13 +1941,12 @@ margin: auto; */
     font-size: 16px;
     padding: 5px 10px;
     margin-top: 8px;
-    box-shadow: 0px 0px 10px rgb(253, 240, 213);
+  
   }
 
   /*login page*/
 
   .body_login {
-    background-color: rgba(155, 41, 39, 0.5);
     flex-direction: column;
     height: auto;
     padding: 10px;
@@ -1977,7 +1975,6 @@ margin: auto; */
     width: 80%;
     max-width: 300px;
     font-size: 20px;
-    box-shadow: 0 0 8px rgb(253, 240, 213);
   }
 
   .login_container h2 {
