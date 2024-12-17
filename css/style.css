@@ -159,25 +159,27 @@ footer {
 
 /* Homepage */
 
+
 .all_event_container {
+  /* position aller kategorien */
   margin: 30px 60px;
-  padding: 0;
 }
 
 .homepage_arrow_wheel {
+  /* grösse der Pfeile */
   height: 30px;
 }
 
 .homepage_event_pics {
   width: 200px;
   height: 150px;
+  /* Passt das Bild am Grid an */
   object-fit: cover;
 }
 
 .homepage_grid_event_title {
   font-size: 30px;
   font-family: Monospace, Arial, Helvetica, sans-serif;
-  text-align: center;
 }
 
 .homepage_event_content {
@@ -187,11 +189,9 @@ footer {
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  /* Define 6 equal columns */
-  grid-template-rows: 50px;
-  /* Define 2 rows */
+  /* Fügt Lücke zwischen Grid Elementen ein */
   gap: 10px;
-  /* Add spacing between grid items */
+  /* Zentriert den Inhalt der Grid Elemente */
   justify-items: center;
 }
 
@@ -210,63 +210,62 @@ footer {
   transform: translate(-50%, -50%);
   color: white;
   font-size: 20px;
-  font-size: 20px;
   background-color: rgba(97, 24, 22, 0.73);
   border-radius: 5px;
   width: 80%;
 }
 
 .homepage_grid_item:nth-child(1) {
+  /* spannt das Grid über 7 spalten */
   grid-column: span 7;
-  /* Span the first item across all 6 columns */
   width: 100%;
   height: 40px;
-  display: flex;
-  /* Use flexbox for centering */
   justify-content: center;
-  /* Center horizontally */
 }
 
+/* für ersten Pfeil */
 .homepage_grid_item:nth-child(2) {
   grid-column: span 1;
-  /* Each remaining item spans 1 column */
 }
 
+/* Zählt für alle Grid-Elemente ab dem dritten */
 .homepage_grid_item:nth-child(n+3) {
   grid-column: span 1;
-  /* Each remaining item spans 1 column */
 }
 
-/* Make 2 and 7 smaller */
+/* für zweiten Pfeil */
 .homepage_grid_item:nth-child(8) {
   grid-column: span 1;
-  /* Each remaining item spans 1 column */
 }
 
 .homepage_iframe_content {
   display: flex;
   justify-content: center;
+  /* align-items ist für wenn die media elemente untereinander sind */
   align-items: center;
   gap: 20px;
   padding: 20px;
 }
 
+/* Rand um das Video */
 .culture_video {
   padding: 10px;
   background-color: #E7E1D3;
 }
 
+/* einstellungen Video-Box */
 .culture_video iframe {
   width: 700px;
   height: 400px;
-  border: 0;
 }
 
+/* Rand um die Karte */
 .map_area {
   padding: 10px;
   background-color: #E7E1D3;
 }
 
+/* einstellungen Karten-Box */
 .map_area iframe {
   width: 400px;
   height: 400px;
