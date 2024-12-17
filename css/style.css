@@ -64,13 +64,12 @@ main {
   color: var(--darkred) !important;
 }
 
-.navbar:hover .dropbtn {
+.navbar div:hover .dropbtn {
   color: var(--darkred);
-  border-bottom-style: solid;
-  border-bottom-color: var(--darkred);
 }
 
-.navbar li a:hover {
+.navbar li a:hover,
+.navbar div a:hover {
   color: var(--darkred);
   border-bottom-style: solid;
   border-bottom-color: var(--darkred);
@@ -78,14 +77,16 @@ main {
 
 /* Navbar Dropdown */
 
+/* "Events" im Navbar */
 .dropdown .dropbtn {
   font-family: Monospace, Arial, Helvetica, sans-serif;
   font-size: 23px;
-  padding: 0px 15px 0px 15px;
+  padding: 0px 15px 2px 15px;
   border: none;
   background-color: inherit;
 }
 
+/* "Events" wenn aktiv/bzw der User auf der Events seite ist */
 .dropdown .active_btn {
   font-family: Monospace, Arial, Helvetica, sans-serif;
   font-size: 23px;
@@ -104,21 +105,26 @@ main {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1; /* dropdown wird über inhalt angezeigt */
   border-radius: 5px;
+  margin-top: 0px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .dropdown-content a {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+}
 
+/* Wenn ein Event Typ offen ist, wird diese im Nav/Dropdown anders angezeigt*/
+.dropdown-content .active_dropdown {
+  color: var(--darkred);
 }
 
 .dropdown-content a:hover {
   color: var(--darkred);
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 
@@ -783,12 +789,12 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
 /* Profile icon und sidebar */
 
 .profile_icon {
-  right: 10px;
   cursor: pointer;
   position: absolute;
   top: 20px;
   right: 20px;
   height: 40px;
+  padding-bottom: 15px;
 }
 
 .sidebar {
@@ -796,10 +802,10 @@ input[type="checkbox"]:checked+.startpage_selectable_button {
   display: none;
   position: fixed;
   right: 0;
-  /* Passen Sie diesen Wert an, um die Dropdown-Position zu justieren */
   width: 150px;
-  /* Passen Sie die Breite der Sidebar an */
   background-color: rgb(159, 86, 85);
+  /* Setzt den Dropdown nach vorne */
+  z-index: 1000;
 }
 
 .profile-container:hover .sidebar {
